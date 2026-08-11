@@ -1,0 +1,6 @@
+# Fine Towing Service Lahore - Robots.txt
+User-agent: *
+Allow: /
+
+# XML Sitemap Location for Googlebot and Search Crawlers
+Sitemap: https://www.finetowingservice.com/sitemap.xml

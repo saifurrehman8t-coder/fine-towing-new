@@ -1,0 +1,17 @@
+{
+  "name": "fine-towing-service-lahore",
+  "version": "1.0.0",
+  "description": "24/7 Fine Towing Service Lahore - High Ranking SEO Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static pre-rendered HTML build ready'",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "towing-service",
+    "lahore",
+    "car-recovery"
+  ],
+  "author": "Fine Towing Service",
+  "license": "ISC"
+}
