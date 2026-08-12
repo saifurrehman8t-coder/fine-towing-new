@@ -621,7 +621,7 @@
       gap: 0.75rem;
     }
 
-    /* Modal Overlay for Add/Edit Blog & Admin Login */
+    /* Modal Overlay for Add/Edit Blog, Admin Login, and Button Editor */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -857,7 +857,7 @@
         <span class="pulse-dot"></span>
         <span>24/7 EMERGENCY DISPATCH ACTIVE • AVG ARRIVAL: <strong id="live-eta-counter">18 mins</strong></span>
       </div>
-      <a href="tel:+923075090646" class="top-notice-phone">
+      <a href="tel:+923075090646" class="top-notice-phone" id="dyn-top-hotline-text">
         🚨 Emergency Hotline: <span>+92 307 5090646</span> (Click to Call)
       </a>
     </div>
@@ -888,7 +888,7 @@
       </nav>
 
       <div class="header-cta-group">
-        <a href="tel:+923075090646" class="btn-primary">
+        <a href="tel:+923075090646" class="btn-primary" id="dyn-header-call-btn">
           <span>📞 Call Dispatch</span>
         </a>
         <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
@@ -911,10 +911,10 @@
           </p>
 
           <div class="hero-actions">
-            <a href="tel:+923075090646" class="btn-primary" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
+            <a href="tel:+923075090646" class="btn-primary" id="dyn-hero-call-btn" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
               🚨 Urgent Dispatch Call: 0307 5090646
             </a>
-            <button onclick="triggerWhatsAppDispatch('Emergency Towing')" class="btn-secondary btn-whatsapp" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
+            <button onclick="triggerWhatsAppDispatch('Emergency Towing')" class="btn-secondary btn-whatsapp" id="dyn-hero-wa-btn" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
               💬 WhatsApp Live Location
             </button>
           </div>
@@ -966,7 +966,7 @@
               </select>
             </div>
 
-            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem; padding: 0.9rem;">
+            <button type="submit" class="btn-primary" id="dyn-dispatch-submit-btn" style="width: 100%; margin-top: 0.5rem; padding: 0.9rem;">
               🚀 Dispatch Tow Truck Now
             </button>
           </form>
@@ -1208,12 +1208,15 @@
             <p class="section-desc">Latest tips, emergency breakdown safety rules, and car maintenance guides.</p>
           </div>
 
-          <!-- Admin Write Blog CTA (Only visible when Admin Mode is active) -->
-          <div id="admin-header-actions" style="display:none;">
-            <button onclick="openAddBlogModal()" class="btn-primary" style="font-size: 1rem; padding: 0.85rem 1.6rem;">
-              ✍️ Write & Publish New Blog
+          <!-- Admin Header Actions (Only visible when Admin Mode is active) -->
+          <div id="admin-header-actions" style="display:none; flex-wrap:wrap; gap:0.5rem;">
+            <button onclick="openAddBlogModal()" class="btn-primary" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">
+              ✍️ Write & Publish Blog
             </button>
-            <button onclick="adminLogout()" class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem; margin-left: 0.5rem;">
+            <button onclick="openButtonEditorModal()" class="btn-secondary" style="font-size: 0.9rem; padding: 0.6rem 1.2rem; border-color:#F59E0B; color:#F59E0B !important;">
+              ⚙️ Edit Site Buttons
+            </button>
+            <button onclick="adminLogout()" class="btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
               🔒 Logout Admin
             </button>
           </div>
@@ -1447,7 +1450,7 @@
     </div>
   </div>
 
-  <!-- --- MODAL 2: ADMIN LOGIN MODAL (SECURE & NO PREFILLED PASSWORD) --- -->
+  <!-- --- MODAL 2: ADMIN LOGIN MODAL (SECURE: fine8!) --- -->
   <div class="modal-overlay" id="admin-login-modal">
     <div class="modal-box" style="max-width: 450px;">
       <button class="modal-close-btn" onclick="closeModal('admin-login-modal')">✕</button>
@@ -1461,6 +1464,39 @@
         </div>
 
         <button type="submit" class="btn-primary" style="padding: 0.85rem;">🔑 Unlock Admin Privileges</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- --- MODAL 3: WEBSITE BUTTON TEXT EDITOR MODAL (ADMIN ONLY) --- -->
+  <div class="modal-overlay" id="button-editor-modal">
+    <div class="modal-box" style="max-width: 600px;">
+      <button class="modal-close-btn" onclick="closeModal('button-editor-modal')">✕</button>
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">⚙️ Edit Website Buttons Text</h3>
+      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Customize the text displayed on all main call-to-action buttons across the website.</p>
+
+      <form onsubmit="handleSaveButtonTexts(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <div class="form-group">
+          <label for="input-btn-header-call">1. Header Call Button Text</label>
+          <input type="text" id="input-btn-header-call" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="input-btn-hero-call">2. Hero Primary Call Button Text</label>
+          <input type="text" id="input-btn-hero-call" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="input-btn-hero-wa">3. Hero WhatsApp Button Text</label>
+          <input type="text" id="input-btn-hero-wa" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="input-btn-dispatch">4. Booking Form Submit Button Text</label>
+          <input type="text" id="input-btn-dispatch" class="form-input" required>
+        </div>
+
+        <button type="submit" class="btn-primary" style="padding: 0.9rem;">💾 Save & Update All Button Texts</button>
       </form>
     </div>
   </div>
@@ -1534,7 +1570,7 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine -->
+  <!-- Inline Dynamic JavaScript Engine with Button Text Editor & Password fine8! -->
   <script>
     const userDriveLogo = 'https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';
     const userDriveBlog1 = 'https://lh3.googleusercontent.com/d/1pB2U9U3XjYbsSbxFZagzXR6oehUI4Omz';
@@ -1545,6 +1581,13 @@
       'blog-1': userDriveBlog1,
       'blog-2': userDriveBlog2,
       'blog-3': userDriveBlog3
+    };
+
+    const defaultButtonTexts = {
+      headerCallBtn: '📞 Call Dispatch',
+      heroCallBtn: '🚨 Urgent Dispatch Call: 0307 5090646',
+      heroWaBtn: '💬 WhatsApp Live Location',
+      dispatchBtn: '🚀 Dispatch Tow Truck Now'
     };
 
     const initialBlogPosts = [
@@ -1610,8 +1653,8 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Force reset local storage cache for version 20
-      const cacheVersion = 'v20_clean_admin_modal_publish_cta';
+      // Force reset local storage cache for version 21
+      const cacheVersion = 'v21_button_text_editor_pass_fine8';
       if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
         localStorage.removeItem('fine_towing_blogs');
         localStorage.setItem('fine_towing_cache_v', cacheVersion);
@@ -1621,10 +1664,68 @@
       initFaqAccordion();
       initMobileMenu();
       initLiveDispatchTimer();
+      applyButtonTexts();
       checkAdminStatus();
       renderBlogs();
       checkUrlHashRoute();
     });
+
+    function getStoredButtonTexts() {
+      const stored = localStorage.getItem('fine_towing_button_texts');
+      if (stored) {
+        try {
+          return { ...defaultButtonTexts, ...JSON.parse(stored) };
+        } catch(e) {}
+      }
+      return defaultButtonTexts;
+    }
+
+    function applyButtonTexts() {
+      const btns = getStoredButtonTexts();
+      
+      const headerCall = document.getElementById('dyn-header-call-btn');
+      if (headerCall) headerCall.innerHTML = `<span>${escapeHtml(btns.headerCallBtn)}</span>`;
+
+      const heroCall = document.getElementById('dyn-hero-call-btn');
+      if (heroCall) heroCall.textContent = btns.heroCallBtn;
+
+      const heroWa = document.getElementById('dyn-hero-wa-btn');
+      if (heroWa) heroWa.textContent = btns.heroWaBtn;
+
+      const dispatchSubmit = document.getElementById('dyn-dispatch-submit-btn');
+      if (dispatchSubmit) dispatchSubmit.textContent = btns.dispatchBtn;
+    }
+
+    function openButtonEditorModal() {
+      if (!isAdminLoggedIn()) {
+        openAdminLoginModal();
+        return;
+      }
+      const btns = getStoredButtonTexts();
+      document.getElementById('input-btn-header-call').value = btns.headerCallBtn;
+      document.getElementById('input-btn-hero-call').value = btns.heroCallBtn;
+      document.getElementById('input-btn-hero-wa').value = btns.heroWaBtn;
+      document.getElementById('input-btn-dispatch').value = btns.dispatchBtn;
+
+      document.getElementById('button-editor-modal').classList.add('active');
+    }
+
+    function handleSaveButtonTexts(e) {
+      e.preventDefault();
+      if (!isAdminLoggedIn()) return;
+
+      const newTexts = {
+        headerCallBtn: document.getElementById('input-btn-header-call').value.trim(),
+        heroCallBtn: document.getElementById('input-btn-hero-call').value.trim(),
+        heroWaBtn: document.getElementById('input-btn-hero-wa').value.trim(),
+        dispatchBtn: document.getElementById('input-btn-dispatch').value.trim()
+      };
+
+      localStorage.setItem('fine_towing_button_texts', JSON.stringify(newTexts));
+      applyButtonTexts();
+      closeModal('button-editor-modal');
+      alert('🎉 Website Button Texts Updated Successfully!');
+    }
 
     function isAdminLoggedIn() {
       return sessionStorage.getItem('fine_towing_admin') === 'true';
@@ -1650,17 +1751,15 @@
     function handleAdminLoginSubmit(e) {
       e.preventDefault();
       const pass = document.getElementById('admin-passcode-input').value;
-      if (pass === 'fine123' || pass === 'admin') {
+      if (pass === 'fine8!') {
         sessionStorage.setItem('fine_towing_admin', 'true');
         checkAdminStatus();
         renderBlogs();
         closeModal('admin-login-modal');
         
-        // Automatically jump to Blog section and open the Write New Blog modal
+        // Show home page blog & open options
         showHomePage('blog');
-        setTimeout(() => {
-          openAddBlogModal();
-        }, 300);
+        alert('🎉 Admin Unlocked with password fine8! You can now edit blogs & customize site buttons.');
       } else {
         alert('❌ Incorrect Admin Password! Please try again.');
       }
@@ -2004,6 +2103,8 @@
     window.openAddBlogModal = openAddBlogModal;
     window.openEditBlogModal = openEditBlogModal;
     window.openAdminLoginModal = openAdminLoginModal;
+    window.openButtonEditorModal = openButtonEditorModal;
+    window.handleSaveButtonTexts = handleSaveButtonTexts;
     window.handleAdminLoginSubmit = handleAdminLoginSubmit;
     window.adminLogout = adminLogout;
     window.closeModal = closeModal;
