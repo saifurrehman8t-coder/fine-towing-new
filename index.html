@@ -1235,7 +1235,7 @@
 
         <div class="showcase-banner">
           <div class="showcase-item">
-            <img src="./assets/flatbed_towing.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
             <div class="showcase-overlay">
               <h4>Hydraulic Flatbed Carrier</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Zero ground clearance transport for sports cars & luxury SUVs in Lahore.</p>
@@ -1243,7 +1243,7 @@
           </div>
 
           <div class="showcase-item">
-            <img src="./assets/roadside_assistance.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80';" alt="Roadside Emergency Towing Assistance Lahore 24 Hours" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80" alt="Roadside Emergency Towing Assistance Lahore 24 Hours" loading="lazy">
             <div class="showcase-overlay">
               <h4>24/7 Roadside Rescue Unit</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Equipped for highway breakdown assistance, battery jumpstarts, and fueling.</p>
@@ -1251,7 +1251,7 @@
           </div>
 
           <div class="showcase-item">
-            <img src="./assets/towing_fleet.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80';" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
             <div class="showcase-overlay">
               <h4>Commercial Towing Fleet</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Heavy winching, wheel-lift tow trucks, and intercity vehicle carriers.</p>
@@ -1433,7 +1433,7 @@
 
         <div class="form-group">
           <label for="blog-input-image">Cover Image URL (Optional)</label>
-          <input type="url" id="blog-input-image" class="form-input" placeholder="./assets/flatbed_towing.jpg">
+          <input type="url" id="blog-input-image" class="form-input" placeholder="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80">
         </div>
 
         <div class="form-group">
@@ -1533,14 +1533,8 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine with Admin Auth & Blog Editing Lock -->
+  <!-- Inline Dynamic JavaScript Engine with Guaranteed Direct CDN Images & Auto-Clearing Cache -->
   <script>
-    const fallbackImages = {
-      blog1: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
-      blog2: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
-      blog3: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80'
-    };
-
     const initialBlogPosts = [
       {
         id: 'blog-1',
@@ -1548,8 +1542,7 @@
         category: 'Emergency Safety',
         author: 'Fine Towing Technical Team',
         date: 'Aug 12, 2026',
-        image: './assets/towing_fleet.jpg',
-        fallbackImage: fallbackImages.blog1,
+        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
         excerpt: 'Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck hotline +92 307 5090646.',
         content: `
           <p>Experiencing a sudden engine breakdown or tire blowout while driving on high-speed expressways like the Lahore Ring Road or Motorway M2 / M11 can be an extremely stressful situation for any vehicle owner.</p>
@@ -1569,8 +1562,7 @@
         category: 'Luxury Towing',
         author: 'Fine Towing Operations',
         date: 'Aug 11, 2026',
-        image: './assets/flatbed_towing.jpg',
-        fallbackImage: fallbackImages.blog2,
+        image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
         excerpt: 'Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized zero-degree tilt flatbed trailers to prevent bumper & undercarriage scrapes in Gulberg & DHA Lahore.',
         content: `
           <p>Luxury sports cars, electric vehicles (EVs), and premium SUVs require specialized flatbed recovery equipment to prevent expensive undercarriage damage.</p>
@@ -1588,8 +1580,7 @@
         category: 'Roadside Towing',
         author: 'Fine Towing Rescue Team',
         date: 'Aug 10, 2026',
-        image: './assets/roadside_assistance.jpg',
-        fallbackImage: fallbackImages.blog3,
+        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80',
         excerpt: 'Extreme summer heat in Lahore puts immense strain on car batteries and radiators. Learn how to diagnose radiator boil-over vs battery failure and call our mobile jumpstart tow team instantly.',
         content: `
           <p>During peak summer months in Lahore when ambient temperatures exceed 42°C, vehicle roadside breakdowns spike significantly due to battery acid breakdown and cooling system pressure overload.</p>
@@ -1604,6 +1595,13 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
+      // Auto-clear old legacy image caches once
+      const cacheKey = 'fine_towing_v5_force_cdn';
+      if (localStorage.getItem('fine_towing_cache_v') !== cacheKey) {
+        localStorage.removeItem('fine_towing_blogs');
+        localStorage.setItem('fine_towing_cache_v', cacheKey);
+      }
+
       initRateCalculator();
       initFaqAccordion();
       initMobileMenu();
@@ -1682,9 +1680,6 @@
       const adminActive = isAdminLoggedIn();
 
       container.innerHTML = blogs.map(blog => {
-        const fallback = blog.fallbackImage || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';
-        const imgSrc = blog.image || fallback;
-        
         const editBtnHtml = adminActive 
           ? `<button onclick="openEditBlogModal('${blog.id}')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">✏️ Edit</button>` 
           : '';
@@ -1693,7 +1688,7 @@
           <article class="blog-card" onclick="openBlogFullPage('${blog.id}')">
             <div class="blog-img-box">
               <span class="blog-category-tag">${escapeHtml(blog.category)}</span>
-              <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallback}';" alt="${escapeHtml(blog.title)}" loading="lazy">
+              <img src="${blog.image}" alt="${escapeHtml(blog.title)}" loading="lazy">
             </div>
             <div class="blog-body">
               <div>
@@ -1795,8 +1790,7 @@
           category,
           author,
           date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-          image: image || './assets/roadside_assistance.jpg',
-          fallbackImage: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+          image: image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
           excerpt: content.substring(0, 140) + '...',
           content: formattedContent
         };
@@ -1826,8 +1820,6 @@
       pageView.classList.add('active');
 
       const pageContent = document.getElementById('full-blog-page-content');
-      const fallback = blog.fallbackImage || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';
-      const imgSrc = blog.image || fallback;
       const adminActive = isAdminLoggedIn();
 
       const editBtnHtml = adminActive 
@@ -1851,7 +1843,7 @@
         </div>
 
         <div style="border-radius:16px; overflow:hidden; margin-bottom:2rem; border:1px solid rgba(255,255,255,0.1); background:#0F172A;">
-          <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallback}';" style="width:100%; max-height:450px; object-fit:cover; display:block;" alt="${escapeHtml(blog.title)}">
+          <img src="${blog.image}" style="width:100%; max-height:450px; object-fit:cover; display:block;" alt="${escapeHtml(blog.title)}">
         </div>
 
         <div style="font-size: 1.1rem; line-height: 1.8; color: #E2E8F0; margin-bottom: 2.5rem;">
