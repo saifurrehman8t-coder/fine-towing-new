@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
   <!-- Primary Meta Tags (SEO Ranking #1 Optimized) -->
-  <title>Fine Towing Service Lahore | 24/7 Emergency Car Towing & Flatbed Recovery</title>
-  <meta name="title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Flatbed Recovery">
-  <meta name="description" content="Fine Towing Service Lahore provides fast 24/7 emergency car towing, luxury vehicle flatbed transport, battery jumpstarts & breakdown recovery in Lahore. 15-30 min ETA. Call +92 307 5090646 now!">
-  <meta name="keywords" content="fine towing service, car towing service lahore, 24/7 car recovery lahore, flatbed tow truck lahore, emergency breakdown recovery, luxury vehicle transport lahore, towing service gulberg, car tow dha lahore, motorway recovery lahore">
+  <title>Fine Towing Service Lahore | 24/7 Emergency Car Towing, Recovery & Drivers Blog</title>
+  <meta name="title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing, Recovery & Drivers Blog">
+  <meta name="description" content="Fine Towing Service Lahore provides fast 24/7 emergency car towing, luxury vehicle flatbed transport, battery jumpstarts, breakdown recovery & driver advice blogs in Lahore. Call +92 307 5090646 now!">
+  <meta name="keywords" content="fine towing service, car towing service lahore, 24/7 car recovery lahore, flatbed tow truck lahore, emergency breakdown recovery, luxury vehicle transport lahore, towing service gulberg, car tow dha lahore, motorway recovery lahore, lahore car breakdown blog">
   <meta name="author" content="Fine Towing Service Lahore">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://www.finetowingservice.com/">
@@ -21,8 +21,8 @@
   <!-- Open Graph / Facebook Meta Tags (Absolute HTTPS Image URLs) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.finetowingservice.com/">
-  <meta property="og:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Flatbed Recovery">
-  <meta property="og:description" content="Fast 15-30 minute emergency towing, flatbed recovery, and roadside assistance across Lahore (Gulberg, DHA, Johar Town, Motorway M2). Call +92 307 5090646!">
+  <meta property="og:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Drivers Blog">
+  <meta property="og:description" content="Fast 15-30 minute emergency towing, flatbed recovery, roadside assistance & breakdown safety blogs across Lahore. Call +92 307 5090646!">
   <meta property="og:image" content="https://www.finetowingservice.com/assets/logo.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Fine Towing Service Lahore">
@@ -30,7 +30,7 @@
   <!-- Twitter Card Meta Tags (Absolute HTTPS Image URLs) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://www.finetowingservice.com/">
-  <meta name="twitter:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing">
+  <meta name="twitter:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Blog">
   <meta name="twitter:description" content="Fast 15-30 minute emergency towing, flatbed recovery, and roadside assistance across Lahore. Call +92 307 5090646!">
   <meta name="twitter:image" content="https://www.finetowingservice.com/assets/logo.png">
 
@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Standalone Complete CSS Engine (Guarantees Full Mobile & Desktop Styling) -->
+  <!-- Standalone Complete CSS Engine (Guarantees Full Mobile & Desktop Styling + Blog Modal) -->
   <style>
     :root {
       --bg-primary: #090D16;
@@ -370,7 +370,7 @@
       font-weight: 600;
       color: #94A3B8;
     }
-    .form-input, .form-select {
+    .form-input, .form-select, .form-textarea {
       width: 100%;
       padding: 0.85rem 1rem;
       background: #0F172A;
@@ -380,6 +380,10 @@
       font-family: inherit;
       font-size: 0.95rem;
       outline: none;
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
     }
 
     /* Sections */
@@ -436,32 +440,6 @@
       justify-content: center;
       font-size: 1.6rem;
       margin-bottom: 1.1rem;
-    }
-    .service-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-    }
-    .service-card p {
-      color: #94A3B8;
-      font-size: 0.9rem;
-      margin-bottom: 1.25rem;
-    }
-    .service-features-list {
-      list-style: none;
-      margin-bottom: 1.25rem;
-    }
-    .service-features-list li {
-      font-size: 0.85rem;
-      color: #CBD5E1;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.4rem;
-    }
-    .service-features-list li::before {
-      content: "✓";
-      color: #F59E0B;
-      font-weight: bold;
     }
 
     /* Calculator */
@@ -552,6 +530,137 @@
       right: 0;
       background: linear-gradient(to top, rgba(9, 13, 22, 0.95), transparent);
       padding: 1.25rem;
+    }
+
+    /* --- BLOG SECTION STYLES --- */
+    .blog-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .blog-card {
+      background: #1E293B;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245, 158, 11, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+    .blog-img-box {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .blog-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .blog-card:hover .blog-img-box img {
+      transform: scale(1.05);
+    }
+    .blog-category-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      color: #F59E0B;
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    .blog-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .blog-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #94A3B8;
+      margin-bottom: 0.75rem;
+    }
+    .blog-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .blog-excerpt {
+      font-size: 0.9rem;
+      color: #CBD5E1;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Modal Overlay for Blog Reader & Add Blog */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-box {
+      background: #1E293B;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 750px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #FFFFFF;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close-btn:hover {
+      background: rgba(245, 158, 11, 0.3);
     }
 
     /* FAQ */
@@ -647,7 +756,7 @@
 
     /* Mobile Responsive Breakpoints */
     @media (max-width: 992px) {
-      .hero-grid, .calc-grid, .footer-grid, .showcase-banner {
+      .hero-grid, .calc-grid, .footer-grid, .showcase-banner, .blog-grid {
         grid-template-columns: 1fr;
       }
       .nav-menu {
@@ -683,7 +792,7 @@
   }
   </script>
 
-  <!-- JSON-LD 2: Pure LocalBusiness Towing Service (100% Rich Result Verified, Zero Schema Conflicts) -->
+  <!-- JSON-LD 2: Pure LocalBusiness Towing Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -717,42 +826,36 @@
   }
   </script>
 
-  <!-- JSON-LD 3: FAQ Schema for Rich Snippet Accordions -->
+  <!-- JSON-LD 3: Blog & Driver Safety Guides Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type": "Blog",
+    "name": "Fine Towing Lahore Driver & Recovery Blog",
+    "url": "https://www.finetowingservice.com/#blog",
+    "description": "Expert advice on emergency towing, motorway recovery safety, luxury flatbed transport, and car breakdown maintenance in Lahore.",
+    "blogPost": [
       {
-        "@type": "Question",
-        "name": "How fast can Fine Towing Service arrive in Lahore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our average emergency arrival time in Lahore metropolitan areas (Gulberg, DHA, Johar Town, Model Town, Canal Road) is 15 to 30 minutes, 24 hours a day, 7 days a week."
+        "@type": "BlogPosting",
+        "headline": "24/7 Car Breakdown Safety Guide: What to Do on Lahore Ring Road & Motorway M2",
+        "datePublished": "2026-08-10",
+        "author": {
+          "@type": "Person",
+          "name": "Fine Towing Technical Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fine Towing Service Lahore",
+          "logo": "https://www.finetowingservice.com/assets/logo.png"
         }
       },
       {
-        "@type": "Question",
-        "name": "Do you offer safe hydraulic flatbed towing for luxury cars?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we specialize in low-clearance hydraulic flatbed tow trucks engineered specifically to safely transport luxury automobiles, sports cars, and low-slung SUVs without any undercarriage or bumper scratch risk."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does car towing cost in Lahore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Local towing starts from PKR 2,500 depending on distance and vehicle size. You can use our online Rate Estimator tool on our homepage to calculate transparent fares before dispatching."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the contact phone number for emergency towing in Lahore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can call our 24/7 emergency dispatch hotline immediately at +92 307 5090646 or send a WhatsApp message to 0307 5090646."
+        "@type": "BlogPosting",
+        "headline": "Why Luxury Vehicles Require Hydraulic Flatbed Towing (Zero-Scratch Guide)",
+        "datePublished": "2026-08-05",
+        "author": {
+          "@type": "Person",
+          "name": "Fine Towing Operations"
         }
       }
     ]
@@ -792,7 +895,7 @@
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#calculator" class="nav-link">Rate Estimator</a></li>
           <li><a href="#areas" class="nav-link">Coverage Areas</a></li>
-          <li><a href="#fleet" class="nav-link">Our Fleet</a></li>
+          <li><a href="#blog" class="nav-link" style="color: #F59E0B;">📝 Blog</a></li>
           <li><a href="#faq" class="nav-link">FAQs</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -1107,8 +1210,29 @@
     </div>
   </section>
 
+  <!-- --- DYNAMIC BLOG SECTION --- -->
+  <section id="blog" class="section-padding" style="background: #0F172A;">
+    <div class="container">
+      <div class="blog-header-row">
+        <div>
+          <span class="section-tag">DRIVERS KNOWLEDGE BASE & GUIDES</span>
+          <h2 class="section-title" style="margin-bottom: 0.5rem;">Lahore Towing & Breakdown Blog</h2>
+          <p class="section-desc">Latest tips, emergency breakdown safety rules, and car maintenance guides.</p>
+        </div>
+
+        <button onclick="openAddBlogModal()" class="btn-primary">
+          ✍️ Write & Publish New Blog
+        </button>
+      </div>
+
+      <div class="blog-grid" id="blog-posts-container">
+        <!-- Blog Cards will render dynamically from JS -->
+      </div>
+    </div>
+  </section>
+
   <!-- Showcase Grid -->
-  <section id="fleet" class="section-padding" style="background: #0F172A;">
+  <section id="fleet" class="section-padding" style="background: #090D16;">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">STATE-OF-THE-ART FLEET</span>
@@ -1145,7 +1269,7 @@
   </section>
 
   <!-- FAQs Accordion Section -->
-  <section id="faq" class="section-padding" style="background: #090D16;">
+  <section id="faq" class="section-padding" style="background: #0F172A;">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
@@ -1193,7 +1317,7 @@
   </section>
 
   <!-- Contact & Location Section -->
-  <section id="contact" class="section-padding" style="background: #0F172A;">
+  <section id="contact" class="section-padding" style="background: #090D16;">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">DISPATCH HOTLINE</span>
@@ -1268,6 +1392,61 @@
     </div>
   </div>
 
+  <!-- --- MODAL 1: ADD / WRITE NEW BLOG --- -->
+  <div class="modal-overlay" id="add-blog-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('add-blog-modal')">✕</button>
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">✍️ Write & Publish New Blog Post</h3>
+      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Publishing new blog articles boosts your Google SEO ranking!</p>
+
+      <form onsubmit="handleBlogSubmit(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <div class="form-group">
+          <label for="blog-input-title">Blog Title</label>
+          <input type="text" id="blog-input-title" class="form-input" placeholder="e.g. 5 Essential Emergency Towing Tips in DHA Lahore" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="blog-input-category">Category</label>
+            <select id="blog-input-category" class="form-select">
+              <option value="Emergency Safety">Emergency Safety</option>
+              <option value="Luxury Towing">Luxury Towing</option>
+              <option value="Roadside Help">Roadside Help</option>
+              <option value="Intercity Transport">Intercity Transport</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="blog-input-author">Author Name</label>
+            <input type="text" id="blog-input-author" class="form-input" value="Fine Towing Dispatch Team" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="blog-input-image">Cover Image URL (Optional)</label>
+          <input type="url" id="blog-input-image" class="form-input" placeholder="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d">
+        </div>
+
+        <div class="form-group">
+          <label for="blog-input-content">Full Blog Content (Markdown / Text)</label>
+          <textarea id="blog-input-content" class="form-textarea" placeholder="Write full blog article advice here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="padding: 1rem;">🚀 Publish Blog Article Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- --- MODAL 2: FULL BLOG ARTICLE READER --- -->
+  <div class="modal-overlay" id="read-blog-modal">
+    <div class="modal-box" style="max-width: 850px;">
+      <button class="modal-close-btn" onclick="closeModal('read-blog-modal')">✕</button>
+      <div id="blog-reader-content">
+        <!-- Rendered Full Blog Article -->
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -1293,7 +1472,7 @@
             <li><a href="#services">Our Services</a></li>
             <li><a href="#calculator">Rate Estimator</a></li>
             <li><a href="#areas">Service Areas</a></li>
-            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#blog">Blog & Guides</a></li>
             <li><a href="#faq">FAQs</a></li>
           </ul>
         </div>
@@ -1330,14 +1509,173 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine -->
+  <!-- Inline Dynamic JavaScript Engine with Blog System & LocalStorage -->
   <script>
+    // Initial Pre-rendered High-Ranking SEO Blog Articles
+    const initialBlogPosts = [
+      {
+        id: 'blog-1',
+        title: '24/7 Car Breakdown Safety Guide: What to Do on Lahore Ring Road & Motorway M2',
+        category: 'Emergency Safety',
+        author: 'Fine Towing Technical Team',
+        date: 'Aug 10, 2026',
+        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80',
+        excerpt: 'Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck.',
+        content: `
+          <p>Experiencing a sudden engine breakdown or flat tire while driving on the high-speed Lahore Ring Road or Motorway M2 can be a nerve-wracking situation for any driver.</p>
+          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">1. Turn on Hazard Warning Signals Immediately</h4>
+          <p>The moment you notice loss of engine power or tire pressure, immediately switch on your hazard lights to warn oncoming traffic behind you.</p>
+          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">2. Pull Safely to the Emergency Shoulder</h4>
+          <p>Gently steer your vehicle to the extreme left emergency shoulder lane. If possible, avoid stopping on elevated flyovers or sharp curves.</p>
+          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">3. Call Fine Towing 24/7 Hotline (+92 307 5090646)</h4>
+          <p>Our emergency recovery trucks are stationed at Ring Road interchanges and Babu Sabu Toll Plaza for rapid 15 to 20 minute response.</p>
+        `
+      },
+      {
+        id: 'blog-2',
+        title: 'Why Luxury Vehicles Require Hydraulic Flatbed Towing (Zero-Scratch Guide)',
+        category: 'Luxury Towing',
+        author: 'Fine Towing Operations',
+        date: 'Aug 05, 2026',
+        image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+        excerpt: 'Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized tilt flatbed trailers to prevent bumper & undercarriage scrapes.',
+        content: `
+          <p>Transporting a high-end luxury vehicle requires specialized equipment. Standard wheel-lift tow trucks can damage low bumpers or strain automatic transmissions.</p>
+          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">Zero-Degree Ground Loading</h4>
+          <p>Hydraulic tilt flatbeds lower flat onto the road surface, allowing sports cars to roll onto the bed smoothly without undercarriage impact.</p>
+        `
+      },
+      {
+        id: 'blog-3',
+        title: 'Dead Battery vs Overheated Engine in Lahore Summer? Instant Emergency Solutions',
+        category: 'Roadside Help',
+        author: 'Fine Towing Rescue Team',
+        date: 'Jul 28, 2026',
+        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
+        excerpt: 'Extreme summer temperatures in Lahore put immense strain on car batteries and radiators. Here is how to diagnose the issue quickly.',
+        content: `
+          <p>Lahore summers often reach extreme temperatures, causing battery fluid evaporation and radiator coolant boiling. Our mobile units carry 12V/24V booster jumpstarts and coolant supplies across DHA, Gulberg, and Johar Town.</p>
+        `
+      }
+    ];
+
     document.addEventListener('DOMContentLoaded', () => {
       initRateCalculator();
       initFaqAccordion();
       initMobileMenu();
       initLiveDispatchTimer();
+      renderBlogs();
     });
+
+    // Blog Management & Rendering
+    function getStoredBlogs() {
+      const stored = localStorage.getItem('fine_towing_blogs');
+      if (stored) {
+        try {
+          return JSON.parse(stored);
+        } catch(e) {
+          return initialBlogPosts;
+        }
+      }
+      return initialBlogPosts;
+    }
+
+    function renderBlogs() {
+      const container = document.getElementById('blog-posts-container');
+      if (!container) return;
+
+      const blogs = getStoredBlogs();
+      container.innerHTML = blogs.map(blog => `
+        <article class="blog-card">
+          <div class="blog-img-box">
+            <span class="blog-category-tag">${escapeHtml(blog.category)}</span>
+            <img src="${blog.image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80'}" alt="${escapeHtml(blog.title)}" loading="lazy">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta">
+                <span>👤 ${escapeHtml(blog.author)}</span>
+                <span>📅 ${escapeHtml(blog.date)}</span>
+              </div>
+              <h3 class="blog-title">${escapeHtml(blog.title)}</h3>
+              <p class="blog-excerpt">${escapeHtml(blog.excerpt)}</p>
+            </div>
+            <button onclick="openBlogReader('${blog.id}')" class="btn-secondary" style="width: 100%; margin-top: 1rem;">
+              📖 Read Full Guide
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function openAddBlogModal() {
+      document.getElementById('add-blog-modal').classList.add('active');
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+    }
+
+    function handleBlogSubmit(e) {
+      e.preventDefault();
+      const title = document.getElementById('blog-input-title').value.trim();
+      const category = document.getElementById('blog-input-category').value;
+      const author = document.getElementById('blog-input-author').value.trim() || 'Fine Towing Team';
+      const image = document.getElementById('blog-input-image').value.trim();
+      const content = document.getElementById('blog-input-content').value.trim();
+
+      if (!title || !content) return;
+
+      const newBlog = {
+        id: 'blog-' + Date.now(),
+        title,
+        category,
+        author,
+        date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+        image: image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+        excerpt: content.substring(0, 140) + '...',
+        content: `<p>${content.replace(/\n/g, '</p><p>')}</p>`
+      };
+
+      const currentBlogs = getStoredBlogs();
+      currentBlogs.unshift(newBlog);
+      localStorage.setItem('fine_towing_blogs', JSON.stringify(currentBlogs));
+
+      renderBlogs();
+      closeModal('add-blog-modal');
+      e.target.reset();
+
+      alert('🎉 Blog Article Published Successfully! Your new blog is live on the site.');
+    }
+
+    function openBlogReader(blogId) {
+      const blogs = getStoredBlogs();
+      const blog = blogs.find(b => b.id === blogId);
+      if (!blog) return;
+
+      const readerBox = document.getElementById('blog-reader-content');
+      readerBox.innerHTML = `
+        <span class="blog-category-tag" style="position:static; display:inline-block; margin-bottom: 1rem;">${escapeHtml(blog.category)}</span>
+        <h2 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 0.75rem; color:#FFFFFF;">${escapeHtml(blog.title)}</h2>
+        <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.5rem;">
+          By <strong style="color:#F59E0B;">${escapeHtml(blog.author)}</strong> • Published on ${escapeHtml(blog.date)}
+        </div>
+        <img src="${blog.image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80'}" style="width:100%; max-height:350px; object-fit:cover; border-radius:12px; margin-bottom:1.5rem;" alt="${escapeHtml(blog.title)}">
+        <div style="font-size: 1.05rem; line-height: 1.7; color: #E2E8F0;">
+          ${blog.content}
+        </div>
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); display:flex; gap:1rem;">
+          <a href="tel:+923075090646" class="btn-primary" style="flex:1;">📞 Call Dispatch (+92 307 5090646)</a>
+          <button onclick="triggerWhatsAppDispatch('Blog Emergency Dispatch')" class="btn-secondary btn-whatsapp" style="flex:1;">💬 WhatsApp GPS Location</button>
+        </div>
+      `;
+
+      document.getElementById('read-blog-modal').classList.add('active');
+    }
+
+    function escapeHtml(str) {
+      return (str || '').replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
 
     function initRateCalculator() {
       const vehicleSelect = document.getElementById('calc-vehicle');
@@ -1433,6 +1771,10 @@
       window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
     }
     window.triggerWhatsAppDispatch = triggerWhatsAppDispatch;
+    window.openAddBlogModal = openAddBlogModal;
+    window.closeModal = closeModal;
+    window.handleBlogSubmit = handleBlogSubmit;
+    window.openBlogReader = openBlogReader;
   </script>
 </body>
 </html>
