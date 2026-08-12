@@ -997,7 +997,7 @@
                 <li>Ideal for Mercedes, BMW, Audi, Porsche</li>
               </ul>
             </div>
-            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Book Flatbed Tow</a>
+            <a href="tel:+923075090646" class="btn-secondary" id="dyn-srv-1-btn" style="width: 100%;">Book Flatbed Tow</a>
           </div>
 
           <div class="service-card">
@@ -1011,7 +1011,7 @@
                 <li>Towing to your preferred garage</li>
               </ul>
             </div>
-            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Call Emergency Recovery</a>
+            <a href="tel:+923075090646" class="btn-secondary" id="dyn-srv-2-btn" style="width: 100%;">Call Emergency Recovery</a>
           </div>
 
           <div class="service-card">
@@ -1025,7 +1025,7 @@
                 <li>GPS tracking during transit</li>
               </ul>
             </div>
-            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Get Intercity Rate</a>
+            <a href="tel:+923075090646" class="btn-secondary" id="dyn-srv-3-btn" style="width: 100%;">Get Intercity Rate</a>
           </div>
 
           <div class="service-card">
@@ -1039,7 +1039,7 @@
                 <li>Quick arrival to your doorstep</li>
               </ul>
             </div>
-            <button onclick="triggerWhatsAppDispatch('Battery Jumpstart')" class="btn-secondary" style="width: 100%;">Request Jumpstart</button>
+            <button onclick="triggerWhatsAppDispatch('Battery Jumpstart')" class="btn-secondary" id="dyn-srv-4-btn" style="width: 100%;">Request Jumpstart</button>
           </div>
 
           <div class="service-card">
@@ -1053,7 +1053,7 @@
                 <li>Safe highway protection setup</li>
               </ul>
             </div>
-            <button onclick="triggerWhatsAppDispatch('Fuel & Tire Assistance')" class="btn-secondary" style="width: 100%;">Request Fuel / Tire</button>
+            <button onclick="triggerWhatsAppDispatch('Fuel & Tire Assistance')" class="btn-secondary" id="dyn-srv-5-btn" style="width: 100%;">Request Fuel / Tire</button>
           </div>
 
           <div class="service-card">
@@ -1067,7 +1067,7 @@
                 <li>Insurance documentation assistance</li>
               </ul>
             </div>
-            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Emergency Winch Call</a>
+            <a href="tel:+923075090646" class="btn-secondary" id="dyn-srv-6-btn" style="width: 100%;">Emergency Winch Call</a>
           </div>
         </div>
       </div>
@@ -1112,7 +1112,7 @@
               <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94A3B8;">Estimated Fare</span>
               <div class="result-price" id="calc-price-output">PKR 4,000</div>
               <div id="calc-time-output" style="color: #38BDF8; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;">~25 Mins Total ETA</div>
-              <a href="tel:+923075090646" class="btn-primary" style="width: 100%;">
+              <a href="tel:+923075090646" class="btn-primary" id="dyn-calc-submit-btn" style="width: 100%;">
                 📞 Confirm & Dispatch at This Fare
               </a>
             </div>
@@ -1214,7 +1214,7 @@
               ✍️ Write & Publish Blog
             </button>
             <button onclick="openButtonEditorModal()" class="btn-secondary" style="font-size: 0.9rem; padding: 0.6rem 1.2rem; border-color:#F59E0B; color:#F59E0B !important;">
-              ⚙️ Edit Site Buttons
+              ⚙️ Edit ALL Site Buttons
             </button>
             <button onclick="adminLogout()" class="btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
               🔒 Logout Admin
@@ -1366,10 +1366,10 @@
           <div style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
             <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Stranded Right Now?</h3>
             <p style="color: #94A3B8; margin-bottom: 1.5rem;">Don't wait on the roadside! Tap below to connect with the nearest tow driver instantly.</p>
-            <a href="tel:+923075090646" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem; margin-bottom: 1rem;">
+            <a href="tel:+923075090646" class="btn-primary" id="dyn-contact-call-btn" style="width: 100%; font-size: 1.1rem; padding: 1rem; margin-bottom: 1rem;">
               📞 Call Hotline Now: 0307 5090646
             </a>
-            <button onclick="triggerWhatsAppDispatch('Emergency Location Share')" class="btn-secondary btn-whatsapp" style="width: 100%; font-size: 1.1rem; padding: 1rem;">
+            <button onclick="triggerWhatsAppDispatch('Emergency Location Share')" class="btn-secondary btn-whatsapp" id="dyn-contact-wa-btn" style="width: 100%; font-size: 1.1rem; padding: 1rem;">
               💬 Send Live Location on WhatsApp
             </button>
           </div>
@@ -1394,10 +1394,10 @@
   <!-- Sticky Mobile Action Bar -->
   <div class="mobile-fixed-bar">
     <div class="mobile-bar-inner">
-      <a href="tel:+923075090646" class="btn-primary" style="font-size: 0.9rem; padding: 0.65rem;">
+      <a href="tel:+923075090646" class="btn-primary" id="dyn-mobile-call-btn" style="font-size: 0.9rem; padding: 0.65rem;">
         📞 Call Tow Truck
       </a>
-      <button onclick="triggerWhatsAppDispatch('Mobile Sticky Bar')" class="btn-secondary btn-whatsapp" style="font-size: 0.9rem; padding: 0.65rem;">
+      <button onclick="triggerWhatsAppDispatch('Mobile Sticky Bar')" class="btn-secondary btn-whatsapp" id="dyn-mobile-wa-btn" style="font-size: 0.9rem; padding: 0.65rem;">
         💬 WhatsApp GPS
       </button>
     </div>
@@ -1468,35 +1468,101 @@
     </div>
   </div>
 
-  <!-- --- MODAL 3: WEBSITE BUTTON TEXT EDITOR MODAL (ADMIN ONLY) --- -->
+  <!-- --- MODAL 3: FULL WEBSITE BUTTON TEXT EDITOR MODAL (100% ACCESS) --- -->
   <div class="modal-overlay" id="button-editor-modal">
-    <div class="modal-box" style="max-width: 600px;">
+    <div class="modal-box" style="max-width: 750px;">
       <button class="modal-close-btn" onclick="closeModal('button-editor-modal')">✕</button>
-      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">⚙️ Edit Website Buttons Text</h3>
-      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Customize the text displayed on all main call-to-action buttons across the website.</p>
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">⚙️ Complete Website Button Text Manager</h3>
+      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Customize the text for ALL buttons across the entire website from one place.</p>
 
       <form onsubmit="handleSaveButtonTexts(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
-        <div class="form-group">
-          <label for="input-btn-header-call">1. Header Call Button Text</label>
-          <input type="text" id="input-btn-header-call" class="form-input" required>
+        
+        <h4 style="color:#38BDF8; font-size:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.4rem;">1. Header & Hero Section Buttons</h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-header-call">Header Call Button</label>
+            <input type="text" id="input-btn-header-call" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-hero-call">Hero Urgent Call Button</label>
+            <input type="text" id="input-btn-hero-call" class="form-input" required>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-hero-wa">Hero WhatsApp Button</label>
+            <input type="text" id="input-btn-hero-wa" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-dispatch">Express Booking Form Button</label>
+            <input type="text" id="input-btn-dispatch" class="form-input" required>
+          </div>
+        </div>
+
+        <h4 style="color:#38BDF8; font-size:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.4rem; margin-top:0.5rem;">2. Core Services Card Buttons</h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-srv-1">Service 1: Hydraulic Flatbed</label>
+            <input type="text" id="input-btn-srv-1" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-srv-2">Service 2: 24/7 Breakdown</label>
+            <input type="text" id="input-btn-srv-2" class="form-input" required>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-srv-3">Service 3: Motorway Intercity</label>
+            <input type="text" id="input-btn-srv-3" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-srv-4">Service 4: Battery Jumpstart</label>
+            <input type="text" id="input-btn-srv-4" class="form-input" required>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-srv-5">Service 5: Fuel & Tire Help</label>
+            <input type="text" id="input-btn-srv-5" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-srv-6">Service 6: Heavy Winching</label>
+            <input type="text" id="input-btn-srv-6" class="form-input" required>
+          </div>
+        </div>
+
+        <h4 style="color:#38BDF8; font-size:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.4rem; margin-top:0.5rem;">3. Calculator, Contact & Mobile Sticky Buttons</h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-calc">Fare Estimator Confirm Button</label>
+            <input type="text" id="input-btn-calc" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-contact-call">Contact Section Call Button</label>
+            <input type="text" id="input-btn-contact-call" class="form-input" required>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="input-btn-contact-wa">Contact Section WhatsApp Button</label>
+            <input type="text" id="input-btn-contact-wa" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="input-btn-mobile-call">Mobile Bar Call Button</label>
+            <input type="text" id="input-btn-mobile-call" class="form-input" required>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="input-btn-hero-call">2. Hero Primary Call Button Text</label>
-          <input type="text" id="input-btn-hero-call" class="form-input" required>
+          <label for="input-btn-mobile-wa">Mobile Bar WhatsApp Button</label>
+          <input type="text" id="input-btn-mobile-wa" class="form-input" required>
         </div>
 
-        <div class="form-group">
-          <label for="input-btn-hero-wa">3. Hero WhatsApp Button Text</label>
-          <input type="text" id="input-btn-hero-wa" class="form-input" required>
-        </div>
-
-        <div class="form-group">
-          <label for="input-btn-dispatch">4. Booking Form Submit Button Text</label>
-          <input type="text" id="input-btn-dispatch" class="form-input" required>
-        </div>
-
-        <button type="submit" class="btn-primary" style="padding: 0.9rem;">💾 Save & Update All Button Texts</button>
+        <button type="submit" class="btn-primary" style="padding: 1rem; margin-top:0.5rem;">💾 Save & Update All 14 Buttons Instantly</button>
       </form>
     </div>
   </div>
@@ -1548,7 +1614,7 @@
           <p style="font-size: 1.1rem; font-weight: 800; color: #F59E0B; margin-bottom: 0.5rem;">
             +92 307 5090646
           </p>
-          <a href="tel:+923075090646" class="btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem; margin-bottom:1rem;">Call Dispatch</a>
+          <a href="tel:+923075090646" class="btn-primary" id="dyn-footer-call-btn" style="font-size: 0.85rem; padding: 0.5rem 1rem; margin-bottom:1rem;">Call Dispatch</a>
 
           <!-- Secret Admin Login Portal Link -->
           <div>
@@ -1570,7 +1636,7 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine with Button Text Editor & Password fine8! -->
+  <!-- Inline Dynamic JavaScript Engine with Full Website Button Access -->
   <script>
     const userDriveLogo = 'https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';
     const userDriveBlog1 = 'https://lh3.googleusercontent.com/d/1pB2U9U3XjYbsSbxFZagzXR6oehUI4Omz';
@@ -1587,7 +1653,19 @@
       headerCallBtn: '📞 Call Dispatch',
       heroCallBtn: '🚨 Urgent Dispatch Call: 0307 5090646',
       heroWaBtn: '💬 WhatsApp Live Location',
-      dispatchBtn: '🚀 Dispatch Tow Truck Now'
+      dispatchBtn: '🚀 Dispatch Tow Truck Now',
+      srv1Btn: 'Book Flatbed Tow',
+      srv2Btn: 'Call Emergency Recovery',
+      srv3Btn: 'Get Intercity Rate',
+      srv4Btn: 'Request Jumpstart',
+      srv5Btn: 'Request Fuel / Tire',
+      srv6Btn: 'Emergency Winch Call',
+      calcBtn: '📞 Confirm & Dispatch at This Fare',
+      contactCallBtn: '📞 Call Hotline Now: 0307 5090646',
+      contactWaBtn: '💬 Send Live Location on WhatsApp',
+      footerCallBtn: 'Call Dispatch',
+      mobileCallBtn: '📞 Call Tow Truck',
+      mobileWaBtn: '💬 WhatsApp GPS'
     };
 
     const initialBlogPosts = [
@@ -1653,8 +1731,8 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Force reset local storage cache for version 21
-      const cacheVersion = 'v21_button_text_editor_pass_fine8';
+      // Force reset local storage cache for version 22
+      const cacheVersion = 'v22_full_site_button_access';
       if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
         localStorage.removeItem('fine_towing_blogs');
         localStorage.setItem('fine_towing_cache_v', cacheVersion);
@@ -1694,6 +1772,47 @@
 
       const dispatchSubmit = document.getElementById('dyn-dispatch-submit-btn');
       if (dispatchSubmit) dispatchSubmit.textContent = btns.dispatchBtn;
+
+      // Service Buttons
+      const srv1 = document.getElementById('dyn-srv-1-btn');
+      if (srv1) srv1.textContent = btns.srv1Btn;
+
+      const srv2 = document.getElementById('dyn-srv-2-btn');
+      if (srv2) srv2.textContent = btns.srv2Btn;
+
+      const srv3 = document.getElementById('dyn-srv-3-btn');
+      if (srv3) srv3.textContent = btns.srv3Btn;
+
+      const srv4 = document.getElementById('dyn-srv-4-btn');
+      if (srv4) srv4.textContent = btns.srv4Btn;
+
+      const srv5 = document.getElementById('dyn-srv-5-btn');
+      if (srv5) srv5.textContent = btns.srv5Btn;
+
+      const srv6 = document.getElementById('dyn-srv-6-btn');
+      if (srv6) srv6.textContent = btns.srv6Btn;
+
+      // Calculator
+      const calcBtn = document.getElementById('dyn-calc-submit-btn');
+      if (calcBtn) calcBtn.textContent = btns.calcBtn;
+
+      // Contact Section
+      const contactCall = document.getElementById('dyn-contact-call-btn');
+      if (contactCall) contactCall.textContent = btns.contactCallBtn;
+
+      const contactWa = document.getElementById('dyn-contact-wa-btn');
+      if (contactWa) contactWa.textContent = btns.contactWaBtn;
+
+      // Footer
+      const footerCall = document.getElementById('dyn-footer-call-btn');
+      if (footerCall) footerCall.textContent = btns.footerCallBtn;
+
+      // Mobile Bar
+      const mobileCall = document.getElementById('dyn-mobile-call-btn');
+      if (mobileCall) mobileCall.textContent = btns.mobileCallBtn;
+
+      const mobileWa = document.getElementById('dyn-mobile-wa-btn');
+      if (mobileWa) mobileWa.textContent = btns.mobileWaBtn;
     }
 
     function openButtonEditorModal() {
@@ -1707,6 +1826,19 @@
       document.getElementById('input-btn-hero-wa').value = btns.heroWaBtn;
       document.getElementById('input-btn-dispatch').value = btns.dispatchBtn;
 
+      document.getElementById('input-btn-srv-1').value = btns.srv1Btn;
+      document.getElementById('input-btn-srv-2').value = btns.srv2Btn;
+      document.getElementById('input-btn-srv-3').value = btns.srv3Btn;
+      document.getElementById('input-btn-srv-4').value = btns.srv4Btn;
+      document.getElementById('input-btn-srv-5').value = btns.srv5Btn;
+      document.getElementById('input-btn-srv-6').value = btns.srv6Btn;
+
+      document.getElementById('input-btn-calc').value = btns.calcBtn;
+      document.getElementById('input-btn-contact-call').value = btns.contactCallBtn;
+      document.getElementById('input-btn-contact-wa').value = btns.contactWaBtn;
+      document.getElementById('input-btn-mobile-call').value = btns.mobileCallBtn;
+      document.getElementById('input-btn-mobile-wa').value = btns.mobileWaBtn;
+
       document.getElementById('button-editor-modal').classList.add('active');
     }
 
@@ -1718,13 +1850,24 @@
         headerCallBtn: document.getElementById('input-btn-header-call').value.trim(),
         heroCallBtn: document.getElementById('input-btn-hero-call').value.trim(),
         heroWaBtn: document.getElementById('input-btn-hero-wa').value.trim(),
-        dispatchBtn: document.getElementById('input-btn-dispatch').value.trim()
+        dispatchBtn: document.getElementById('input-btn-dispatch').value.trim(),
+        srv1Btn: document.getElementById('input-btn-srv-1').value.trim(),
+        srv2Btn: document.getElementById('input-btn-srv-2').value.trim(),
+        srv3Btn: document.getElementById('input-btn-srv-3').value.trim(),
+        srv4Btn: document.getElementById('input-btn-srv-4').value.trim(),
+        srv5Btn: document.getElementById('input-btn-srv-5').value.trim(),
+        srv6Btn: document.getElementById('input-btn-srv-6').value.trim(),
+        calcBtn: document.getElementById('input-btn-calc').value.trim(),
+        contactCallBtn: document.getElementById('input-btn-contact-call').value.trim(),
+        contactWaBtn: document.getElementById('input-btn-contact-wa').value.trim(),
+        mobileCallBtn: document.getElementById('input-btn-mobile-call').value.trim(),
+        mobileWaBtn: document.getElementById('input-btn-mobile-wa').value.trim()
       };
 
       localStorage.setItem('fine_towing_button_texts', JSON.stringify(newTexts));
       applyButtonTexts();
       closeModal('button-editor-modal');
-      alert('🎉 Website Button Texts Updated Successfully!');
+      alert('🎉 ALL Website Buttons Updated Successfully!');
     }
 
     function isAdminLoggedIn() {
@@ -1741,7 +1884,7 @@
     function openAdminLoginModal() {
       if (isAdminLoggedIn()) {
         showHomePage('blog');
-        openAddBlogModal();
+        openButtonEditorModal();
         return;
       }
       document.getElementById('admin-passcode-input').value = '';
@@ -1759,7 +1902,7 @@
         
         // Show home page blog & open options
         showHomePage('blog');
-        alert('🎉 Admin Unlocked with password fine8! You can now edit blogs & customize site buttons.');
+        alert('🎉 Admin Unlocked with password fine8! Full access to edit all site buttons and blogs.');
       } else {
         alert('❌ Incorrect Admin Password! Please try again.');
       }
