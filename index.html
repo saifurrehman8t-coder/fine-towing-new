@@ -1210,7 +1210,7 @@
 
           <!-- Admin Write Blog CTA (Only visible when Admin Mode is active) -->
           <div id="admin-header-actions" style="display:none;">
-            <button onclick="openAddBlogModal()" class="btn-primary">
+            <button onclick="openAddBlogModal()" class="btn-primary" style="font-size: 1rem; padding: 0.85rem 1.6rem;">
               ✍️ Write & Publish New Blog
             </button>
             <button onclick="adminLogout()" class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem; margin-left: 0.5rem;">
@@ -1447,17 +1447,17 @@
     </div>
   </div>
 
-  <!-- --- MODAL 2: ADMIN LOGIN MODAL --- -->
+  <!-- --- MODAL 2: ADMIN LOGIN MODAL (SECURE & NO PREFILLED PASSWORD) --- -->
   <div class="modal-overlay" id="admin-login-modal">
     <div class="modal-box" style="max-width: 450px;">
       <button class="modal-close-btn" onclick="closeModal('admin-login-modal')">✕</button>
       <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">🔐 Admin Access Portal</h3>
-      <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.5rem;">Enter Admin PIN / Password to unlock blog editing & publishing rights.</p>
+      <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.5rem;">Enter Admin Password to unlock publishing & editing controls.</p>
 
       <form onsubmit="handleAdminLoginSubmit(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
         <div class="form-group">
           <label for="admin-passcode-input">Admin Password</label>
-          <input type="password" id="admin-passcode-input" class="form-input" placeholder="Enter password (default: fine123)" required>
+          <input type="password" id="admin-passcode-input" class="form-input" placeholder="Enter Admin Password" autocomplete="off" required>
         </div>
 
         <button type="submit" class="btn-primary" style="padding: 0.85rem;">🔑 Unlock Admin Privileges</button>
@@ -1534,7 +1534,7 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine (Optimized for Ultra Fast Loading) -->
+  <!-- Inline Dynamic JavaScript Engine -->
   <script>
     const userDriveLogo = 'https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';
     const userDriveBlog1 = 'https://lh3.googleusercontent.com/d/1pB2U9U3XjYbsSbxFZagzXR6oehUI4Omz';
@@ -1610,8 +1610,8 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Force reset local storage cache with version 19
-      const cacheVersion = 'v19_crisp_favicon_ico_png';
+      // Force reset local storage cache for version 20
+      const cacheVersion = 'v20_clean_admin_modal_publish_cta';
       if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
         localStorage.removeItem('fine_towing_blogs');
         localStorage.setItem('fine_towing_cache_v', cacheVersion);
@@ -1639,7 +1639,8 @@
 
     function openAdminLoginModal() {
       if (isAdminLoggedIn()) {
-        alert('🔓 You are already logged in as Admin!');
+        showHomePage('blog');
+        openAddBlogModal();
         return;
       }
       document.getElementById('admin-passcode-input').value = '';
@@ -1654,7 +1655,12 @@
         checkAdminStatus();
         renderBlogs();
         closeModal('admin-login-modal');
-        alert('🎉 Admin Privileges Unlocked! You can now write and edit blogs.');
+        
+        // Automatically jump to Blog section and open the Write New Blog modal
+        showHomePage('blog');
+        setTimeout(() => {
+          openAddBlogModal();
+        }, 300);
       } else {
         alert('❌ Incorrect Admin Password! Please try again.');
       }
@@ -1788,7 +1794,7 @@
       if (!title || !content) return;
 
       const currentBlogs = getStoredBlogs();
-      const formattedContent = `<p>${content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>').replace(/<\/p><p>/g, '</p><p>')}</p>`;
+      const formattedContent = `<p>${content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>')}</p>`;
 
       if (editId) {
         const index = currentBlogs.findIndex(b => b.id === editId);
