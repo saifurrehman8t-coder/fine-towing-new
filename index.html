@@ -283,7 +283,7 @@
       background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.15) 0%, rgba(9, 13, 22, 1) 70%);
     }
     .hero-grid {
-      display grid;
+      display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       gap: 2.5rem;
       align-items: center;
@@ -1235,7 +1235,7 @@
 
         <div class="showcase-banner">
           <div class="showcase-item">
-            <img src="./assets/flatbed_towing.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80';" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
+            <img src="./assets/flatbed_towing.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80';" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
             <div class="showcase-overlay">
               <h4>Hydraulic Flatbed Carrier</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Zero ground clearance transport for sports cars & luxury SUVs in Lahore.</p>
@@ -1243,7 +1243,7 @@
           </div>
 
           <div class="showcase-item">
-            <img src="./assets/roadside_assistance.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80';" alt="Roadside Emergency Towing Assistance Lahore 24 Hours" loading="lazy">
+            <img src="./assets/roadside_assistance.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80';" alt="Roadside Emergency Towing Assistance Lahore 24 Hours" loading="lazy">
             <div class="showcase-overlay">
               <h4>24/7 Roadside Rescue Unit</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Equipped for highway breakdown assistance, battery jumpstarts, and fueling.</p>
@@ -1251,7 +1251,7 @@
           </div>
 
           <div class="showcase-item">
-            <img src="./assets/towing_fleet.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
+            <img src="./assets/towing_fleet.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80';" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
             <div class="showcase-overlay">
               <h4>Commercial Towing Fleet</h4>
               <p style="font-size: 0.8rem; color: #94A3B8;">Heavy winching, wheel-lift tow trucks, and intercity vehicle carriers.</p>
@@ -1533,8 +1533,14 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine with Hard Reset to Custom Lahore Tow Truck Images -->
+  <!-- Inline Dynamic JavaScript Engine with Guaranteed 3 Distinct Tow Truck Images & Auto-Reset -->
   <script>
+    const fallbackMap = {
+      'blog-1': 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
+      'blog-2': 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80',
+      'blog-3': 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80'
+    };
+
     const initialBlogPosts = [
       {
         id: 'blog-1',
@@ -1543,7 +1549,7 @@
         author: 'Fine Towing Technical Team',
         date: 'Aug 12, 2026',
         image: './assets/towing_fleet.jpg',
-        fallbackImage: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+        fallbackImage: fallbackMap['blog-1'],
         excerpt: 'Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck hotline +92 307 5090646.',
         content: `
           <p>Experiencing a sudden engine breakdown or tire blowout while driving on high-speed expressways like the Lahore Ring Road or Motorway M2 / M11 can be an extremely stressful situation for any vehicle owner.</p>
@@ -1564,7 +1570,7 @@
         author: 'Fine Towing Operations',
         date: 'Aug 11, 2026',
         image: './assets/flatbed_towing.jpg',
-        fallbackImage: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+        fallbackImage: fallbackMap['blog-2'],
         excerpt: 'Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized zero-degree tilt flatbed trailers to prevent bumper & undercarriage scrapes in Gulberg & DHA Lahore.',
         content: `
           <p>Luxury sports cars, electric vehicles (EVs), and premium SUVs require specialized flatbed recovery equipment to prevent expensive undercarriage damage.</p>
@@ -1583,7 +1589,7 @@
         author: 'Fine Towing Rescue Team',
         date: 'Aug 10, 2026',
         image: './assets/roadside_assistance.jpg',
-        fallbackImage: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+        fallbackImage: fallbackMap['blog-3'],
         excerpt: 'Extreme summer heat in Lahore puts immense strain on car batteries and radiators. Learn how to diagnose radiator boil-over vs battery failure and call our mobile jumpstart tow team instantly.',
         content: `
           <p>During peak summer months in Lahore when ambient temperatures exceed 42°C, vehicle roadside breakdowns spike significantly due to battery acid breakdown and cooling system pressure overload.</p>
@@ -1598,9 +1604,12 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Force clear browser cache to load custom Lahore tow truck images
-      localStorage.removeItem('fine_towing_blogs');
-      localStorage.setItem('fine_towing_cache_v', 'v9_lahore_tow_trucks');
+      // Force reset local storage cache to ensure 3 DISTINCT images display
+      const cacheVersion = 'v11_3_distinct_tow_trucks';
+      if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
+        localStorage.removeItem('fine_towing_blogs');
+        localStorage.setItem('fine_towing_cache_v', cacheVersion);
+      }
 
       initRateCalculator();
       initFaqAccordion();
@@ -1679,12 +1688,12 @@
       const blogs = getStoredBlogs();
       const adminActive = isAdminLoggedIn();
 
-      container.innerHTML = blogs.map(blog => {
+      container.innerHTML = blogs.map((blog, idx) => {
         const editBtnHtml = adminActive 
           ? `<button onclick="openEditBlogModal('${blog.id}')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">✏️ Edit</button>` 
           : '';
 
-        const fallback = blog.fallbackImage || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';
+        const fallback = blog.fallbackImage || fallbackMap[blog.id] || fallbackMap['blog-' + (idx + 1)] || fallbackMap['blog-1'];
 
         return `
           <article class="blog-card" onclick="openBlogFullPage('${blog.id}')">
@@ -1793,7 +1802,7 @@
           author,
           date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
           image: image || './assets/roadside_assistance.jpg',
-          fallbackImage: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+          fallbackImage: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
           excerpt: content.substring(0, 140) + '...',
           content: formattedContent
         };
@@ -1829,7 +1838,7 @@
         ? `<button onclick="openEditBlogModal('${blog.id}')" class="btn-secondary" style="font-size:0.85rem; padding:0.4rem 0.9rem;">✏️ Edit This Article</button>` 
         : '';
 
-      const fallback = blog.fallbackImage || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80';
+      const fallback = blog.fallbackImage || fallbackMap[blog.id] || fallbackMap['blog-1'];
 
       pageContent.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom: 1.5rem;">
