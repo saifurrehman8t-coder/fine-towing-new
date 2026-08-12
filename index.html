@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
-  <!-- Primary Meta Tags (SEO Ranking #1 Optimized) -->
+  <!-- Primary Meta Tags (Google SEO #1 Ranking & SERP Optimized) -->
   <title>Fine Towing Service Lahore | 24/7 Emergency Car Towing, Recovery & Drivers Blog</title>
   <meta name="title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing, Recovery & Drivers Blog">
-  <meta name="description" content="Fine Towing Service Lahore provides fast 24/7 emergency car towing, luxury vehicle flatbed transport, battery jumpstarts, breakdown recovery & driver advice blogs in Lahore. Call +92 307 5090646 now!">
-  <meta name="keywords" content="fine towing service, car towing service lahore, 24/7 car recovery lahore, flatbed tow truck lahore, emergency breakdown recovery, luxury vehicle transport lahore, towing service gulberg, car tow dha lahore, motorway recovery lahore, lahore car breakdown blog">
+  <meta name="description" content="Fine Towing Service Lahore provides fast 24/7 emergency car towing, luxury vehicle hydraulic flatbed transport, battery jumpstarts, breakdown recovery & driver safety blogs across Lahore (Gulberg, DHA, Johar Town, Ring Road, Motorway M2). Call +92 307 5090646 now!">
+  <meta name="keywords" content="fine towing service, car towing service lahore, 24/7 car recovery lahore, flatbed tow truck lahore, emergency breakdown recovery, luxury vehicle transport lahore, towing service gulberg, car tow dha lahore, motorway recovery lahore, lahore car breakdown blog, car battery jumpstart lahore">
   <meta name="author" content="Fine Towing Service Lahore">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://www.finetowingservice.com/">
@@ -22,8 +22,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.finetowingservice.com/">
   <meta property="og:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Drivers Blog">
-  <meta property="og:description" content="Fast 15-30 minute emergency towing, flatbed recovery, roadside assistance & breakdown safety blogs across Lahore. Call +92 307 5090646!">
-  <meta property="og:image" content="https://www.finetowingservice.com/assets/logo.png">
+  <meta property="og:description" content="Fast 15-30 minute emergency towing, hydraulic flatbed recovery, roadside assistance & breakdown safety blogs across Lahore. Call +92 307 5090646!">
+  <meta property="og:image" content="https://www.finetowingservice.com/assets/flatbed_towing.jpg">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Fine Towing Service Lahore">
 
@@ -32,14 +32,14 @@
   <meta name="twitter:url" content="https://www.finetowingservice.com/">
   <meta name="twitter:title" content="Fine Towing Service Lahore | 24/7 Emergency Car Towing & Blog">
   <meta name="twitter:description" content="Fast 15-30 minute emergency towing, flatbed recovery, and roadside assistance across Lahore. Call +92 307 5090646!">
-  <meta name="twitter:image" content="https://www.finetowingservice.com/assets/logo.png">
+  <meta name="twitter:image" content="https://www.finetowingservice.com/assets/flatbed_towing.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Standalone Complete CSS Engine (Guarantees Full Mobile & Desktop Styling + Blog Modal) -->
+  <!-- Standalone Complete CSS Engine (Guarantees Full Mobile & Desktop Styling + Full-Page Blog Reader) -->
   <style>
     :root {
       --bg-primary: #090D16;
@@ -515,11 +515,11 @@
       border: 1px solid var(--border-color);
       position: relative;
       background: #1E293B;
-      min-height: 240px;
+      min-height: 260px;
     }
     .showcase-item img {
       width: 100%;
-      height: 240px;
+      height: 260px;
       object-fit: cover;
       display: block;
     }
@@ -554,6 +554,7 @@
       transition: var(--transition);
       display: flex;
       flex-direction: column;
+      cursor: pointer;
     }
     .blog-card:hover {
       transform: translateY(-6px);
@@ -561,7 +562,7 @@
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
     }
     .blog-img-box {
-      height: 200px;
+      height: 220px;
       overflow: hidden;
       position: relative;
     }
@@ -612,8 +613,12 @@
       color: #CBD5E1;
       margin-bottom: 1.25rem;
     }
+    .blog-card-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
 
-    /* Modal Overlay for Blog Reader & Add Blog */
+    /* Modal Overlay for Add/Edit Blog */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -661,6 +666,20 @@
     }
     .modal-close-btn:hover {
       background: rgba(245, 158, 11, 0.3);
+    }
+
+    /* --- DEDICATED FULL PAGE BLOG READER VIEW --- */
+    #full-blog-page-view {
+      display: none;
+      min-height: 80vh;
+      padding: 4rem 0;
+      background: #090D16;
+    }
+    #full-blog-page-view.active {
+      display: block;
+    }
+    .main-site-content.hidden {
+      display: none;
     }
 
     /* FAQ */
@@ -774,14 +793,14 @@
     }
   </style>
 
-  <!-- JSON-LD 1: Organization & Logo (Google SERP Logo) -->
+  <!-- JSON-LD 1: Organization & Logo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Fine Towing Service Lahore",
     "url": "https://www.finetowingservice.com/",
-    "logo": "https://www.finetowingservice.com/assets/logo.png",
+    "logo": "https://www.finetowingservice.com/favicon.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+923075090646",
@@ -798,7 +817,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Fine Towing Service Lahore",
-    "image": "https://www.finetowingservice.com/assets/logo.png",
+    "image": "https://www.finetowingservice.com/assets/flatbed_towing.jpg",
     "url": "https://www.finetowingservice.com/",
     "telephone": "+923075090646",
     "priceRange": "$$",
@@ -826,19 +845,20 @@
   }
   </script>
 
-  <!-- JSON-LD 3: Blog & Driver Safety Guides Schema -->
+  <!-- JSON-LD 3: BlogPosting Schemas for Rich SERP Ranking -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Fine Towing Lahore Driver & Recovery Blog",
+    "name": "Fine Towing Lahore Driver & Emergency Recovery Blog",
     "url": "https://www.finetowingservice.com/#blog",
-    "description": "Expert advice on emergency towing, motorway recovery safety, luxury flatbed transport, and car breakdown maintenance in Lahore.",
+    "description": "Expert guides on emergency towing, motorway M2 breakdown safety, hydraulic flatbed recovery, and car battery maintenance in Lahore.",
     "blogPost": [
       {
         "@type": "BlogPosting",
         "headline": "24/7 Car Breakdown Safety Guide: What to Do on Lahore Ring Road & Motorway M2",
-        "datePublished": "2026-08-10",
+        "datePublished": "2026-08-12",
+        "image": "https://www.finetowingservice.com/assets/towing_fleet.jpg",
         "author": {
           "@type": "Person",
           "name": "Fine Towing Technical Team"
@@ -846,16 +866,27 @@
         "publisher": {
           "@type": "Organization",
           "name": "Fine Towing Service Lahore",
-          "logo": "https://www.finetowingservice.com/assets/logo.png"
+          "logo": "https://www.finetowingservice.com/favicon.png"
         }
       },
       {
         "@type": "BlogPosting",
-        "headline": "Why Luxury Vehicles Require Hydraulic Flatbed Towing (Zero-Scratch Guide)",
-        "datePublished": "2026-08-05",
+        "headline": "Why Luxury Vehicles Require Hydraulic Flatbed Towing in Lahore (Zero-Scratch Guide)",
+        "datePublished": "2026-08-11",
+        "image": "https://www.finetowingservice.com/assets/flatbed_towing.jpg",
         "author": {
           "@type": "Person",
           "name": "Fine Towing Operations"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Dead Battery vs Overheated Engine in Lahore Summer? Instant Emergency Solutions",
+        "datePublished": "2026-08-10",
+        "image": "https://www.finetowingservice.com/assets/roadside_assistance.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Fine Towing Rescue Team"
         }
       }
     ]
@@ -880,7 +911,7 @@
   <!-- Header Navigation -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/" class="logo-brand">
+      <a href="javascript:void(0)" onclick="showHomePage()" class="logo-brand">
         <div class="logo-img-box">
           <img src="https://www.finetowingservice.com/favicon.png" alt="Fine Towing Service Logo" width="48" height="48">
         </div>
@@ -892,12 +923,12 @@
 
       <nav>
         <ul class="nav-menu">
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#calculator" class="nav-link">Rate Estimator</a></li>
-          <li><a href="#areas" class="nav-link">Coverage Areas</a></li>
-          <li><a href="#blog" class="nav-link" style="color: #F59E0B;">📝 Blog</a></li>
-          <li><a href="#faq" class="nav-link">FAQs</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('services')" class="nav-link">Services</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('calculator')" class="nav-link">Rate Estimator</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('areas')" class="nav-link">Coverage Areas</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('blog')" class="nav-link" style="color: #F59E0B;">📝 Blog</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('faq')" class="nav-link">FAQs</a></li>
+          <li><a href="javascript:void(0)" onclick="showHomePage('contact')" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -910,475 +941,553 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-content-col">
-        <div class="hero-badge">⚡ #1 Rated Car Recovery & Towing in Lahore</div>
-        <h1 class="hero-title">
-          24/7 Emergency <span class="highlight">Car Towing</span> & Luxury Flatbed Service
-        </h1>
-        <p class="hero-subtitle">
-          Stranded in Lahore? Fine Towing Service provides ultra-fast 15-30 minute emergency breakdown recovery, zero-scratch hydraulic flatbed transport, and 24/7 roadside help across all Lahore sectors.
-        </p>
+  <!-- MAIN HOMEPAGE WRAPPER -->
+  <div id="main-homepage-content" class="main-site-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content-col">
+          <div class="hero-badge">⚡ #1 Rated Car Recovery & Towing in Lahore</div>
+          <h1 class="hero-title">
+            24/7 Emergency <span class="highlight">Car Towing</span> & Luxury Flatbed Service
+          </h1>
+          <p class="hero-subtitle">
+            Stranded in Lahore? Fine Towing Service provides ultra-fast 15-30 minute emergency breakdown recovery, zero-scratch hydraulic flatbed transport, and 24/7 roadside help across all Lahore sectors.
+          </p>
 
-        <div class="hero-actions">
-          <a href="tel:+923075090646" class="btn-primary" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
-            🚨 Urgent Dispatch Call: 0307 5090646
-          </a>
-          <button onclick="triggerWhatsAppDispatch('Emergency Towing')" class="btn-secondary btn-whatsapp" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
-            💬 WhatsApp Live Location
-          </button>
+          <div class="hero-actions">
+            <a href="tel:+923075090646" class="btn-primary" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
+              🚨 Urgent Dispatch Call: 0307 5090646
+            </a>
+            <button onclick="triggerWhatsAppDispatch('Emergency Towing')" class="btn-secondary btn-whatsapp" style="font-size: 1.05rem; padding: 0.9rem 1.8rem;">
+              💬 WhatsApp Live Location
+            </button>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-box">
+              <h4>15-30M</h4>
+              <p>Average Arrival ETA</p>
+            </div>
+            <div class="stat-box">
+              <h4>10,000+</h4>
+              <p>Vehicles Rescued</p>
+            </div>
+            <div class="stat-box">
+              <h4>100%</h4>
+              <p>Damage-Free Towing</p>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-stats-row">
-          <div class="stat-box">
-            <h4>15-30M</h4>
-            <p>Average Arrival ETA</p>
+        <!-- Quick Dispatch Booking Card -->
+        <div class="dispatch-card">
+          <div class="dispatch-card-title">
+            <span>⚡</span> Express Towing Dispatch
           </div>
-          <div class="stat-box">
-            <h4>10,000+</h4>
-            <p>Vehicles Rescued</p>
-          </div>
-          <div class="stat-box">
-            <h4>100%</h4>
-            <p>Damage-Free Towing</p>
-          </div>
-        </div>
-      </div>
+          <p style="font-size: 0.875rem; color: #94A3B8;">
+            Fill in details for immediate call back or instant driver assignment.
+          </p>
 
-      <!-- Quick Dispatch Booking Card -->
-      <div class="dispatch-card">
-        <div class="dispatch-card-title">
-          <span>⚡</span> Express Towing Dispatch
-        </div>
-        <p style="font-size: 0.875rem; color: #94A3B8;">
-          Fill in details for immediate call back or instant driver assignment.
-        </p>
-
-        <form class="dispatch-form" onsubmit="event.preventDefault(); triggerWhatsAppDispatch(document.getElementById('service-type-input').value);">
-          <div class="form-group">
-            <label for="pickup-loc">Pickup Location in Lahore</label>
-            <input type="text" id="pickup-loc" class="form-input" placeholder="e.g. DHA Phase 5, Gulberg III, Canal Road" required>
-          </div>
-
-          <div class="form-group">
-            <label for="vehicle-model">Car Model & Type</label>
-            <input type="text" id="vehicle-model" class="form-input" placeholder="e.g. Honda Civic, Audi A6, Prado" required>
-          </div>
-
-          <div class="form-group">
-            <label for="service-type-input">Service Required</label>
-            <select id="service-type-input" class="form-select">
-              <option value="Hydraulic Flatbed Towing">Hydraulic Flatbed Towing (Luxury/Sports)</option>
-              <option value="Standard Breakdown Towing">Standard Breakdown Towing</option>
-              <option value="Battery Jumpstart">Battery Jumpstart Assistance</option>
-              <option value="Fuel Delivery">Emergency Fuel Delivery</option>
-              <option value="Highway Recovery">Motorway / Highway Recovery</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem; padding: 0.9rem;">
-            🚀 Dispatch Tow Truck Now
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Services Section -->
-  <section id="services" class="section-padding" style="background: #090D16;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">PREMIUM RECOVERY SERVICES</span>
-        <h2 class="section-title">Complete Towing & Roadside Assistance Solutions</h2>
-        <p class="section-desc">
-          Equipped with heavy-duty winches, modern hydraulic tilt flatbeds, and trained emergency technicians across Lahore.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div>
-            <div class="service-icon">🚚</div>
-            <h3>Hydraulic Flatbed Towing</h3>
-            <p>Designed for low-ground-clearance luxury cars, sports cars, EVs, and SUVs. Full zero-damage tilt bed loading.</p>
-            <ul class="service-features-list">
-              <li>Low-angle hydraulic tilt loading</li>
-              <li>Undercarriage protection</li>
-              <li>Ideal for Mercedes, BMW, Audi, Porsche</li>
-            </ul>
-          </div>
-          <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Book Flatbed Tow</a>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <div class="service-icon">🚨</div>
-            <h3>24/7 Breakdown Recovery</h3>
-            <p>Immediate roadside tow for cars stranded due to mechanical breakdown, overheating, transmission failure, or engine stall.</p>
-            <ul class="service-features-list">
-              <li>24 Hours & Holidays availability</li>
-              <li>15-30 Minute rapid arrival guarantee</li>
-              <li>Towing to your preferred garage</li>
-            </ul>
-          </div>
-          <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Call Emergency Recovery</a>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <div class="service-icon">🛣️</div>
-            <h3>Motorway & Intercity Towing</h3>
-            <p>Long-distance vehicle transport between Lahore, Islamabad, Faisalabad, Multan, and Karachi via M2, M3, M11.</p>
-            <ul class="service-features-list">
-              <li>Intercity covered & open car carrier</li>
-              <li>Highway police compliant recovery</li>
-              <li>GPS tracking during transit</li>
-            </ul>
-          </div>
-          <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Get Intercity Rate</a>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <div class="service-icon">🔋</div>
-            <h3>Battery Jumpstart & On-Site Help</h3>
-            <p>Dead car battery? We provide instant heavy-duty booster jumpstarts and battery replacement on the spot in Lahore.</p>
-            <ul class="service-features-list">
-              <li>12V / 24V jumpstart boosters</li>
-              <li>Alternator diagnostic testing</li>
-              <li>Quick arrival to your doorstep</li>
-            </ul>
-          </div>
-          <button onclick="triggerWhatsAppDispatch('Battery Jumpstart')" class="btn-secondary" style="width: 100%;">Request Jumpstart</button>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <div class="service-icon">⛽</div>
-            <h3>Fuel Delivery & Tire Change</h3>
-            <p>Ran out of petrol or got a flat tire on Ring Road or Canal Bank? Our mobile unit delivers fuel and changes spare tires.</p>
-            <ul class="service-features-list">
-              <li>Emergency petrol & diesel supply</li>
-              <li>Tire swap & puncture assistance</li>
-              <li>Safe highway protection setup</li>
-            </ul>
-          </div>
-          <button onclick="triggerWhatsAppDispatch('Fuel & Tire Assistance')" class="btn-secondary" style="width: 100%;">Request Fuel / Tire</button>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <div class="service-icon">🏗️</div>
-            <h3>Accident Extraction & Winching</h3>
-            <p>Specialized heavy winching and ditch recovery for cars involved in collisions or stuck off-road.</p>
-            <ul class="service-features-list">
-              <li>Heavy-duty steel winch cables</li>
-              <li>Off-road ditch recovery</li>
-              <li>Insurance documentation assistance</li>
-            </ul>
-          </div>
-          <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Emergency Winch Call</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Fare Calculator Section -->
-  <section id="calculator" class="section-padding" style="background: #0F172A;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">TRANSPARENT PRICING</span>
-        <h2 class="section-title">Instant Towing Rate Calculator</h2>
-        <p class="section-desc">Estimate your transparent towing fare before dispatching. No hidden charges!</p>
-      </div>
-
-      <div class="calculator-box">
-        <div class="calc-grid">
-          <div class="calc-inputs-col">
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="calc-vehicle">Select Vehicle Class</label>
-              <select id="calc-vehicle" class="form-select">
-                <option value="sedan">Standard Sedan / Hatchback (Corolla, Civic, Swift)</option>
-                <option value="suv">Compact SUV / Crossover (Sportage, Tucson, Vezel)</option>
-                <option value="luxury">Luxury / Low Clearance (Mercedes, BMW, Porsche)</option>
-                <option value="heavy">Heavy 4x4 / Large SUV (Prado, Land Cruiser, Fortuner)</option>
-              </select>
+          <form class="dispatch-form" onsubmit="event.preventDefault(); triggerWhatsAppDispatch(document.getElementById('service-type-input').value);">
+            <div class="form-group">
+              <label for="pickup-loc">Pickup Location in Lahore</label>
+              <input type="text" id="pickup-loc" class="form-input" placeholder="e.g. DHA Phase 5, Gulberg III, Canal Road" required>
             </div>
 
             <div class="form-group">
-              <label for="calc-distance">Estimated Distance (Kilometers): <span id="calc-distance-val" style="color: #F59E0B; font-weight: 800;">10 km</span></label>
-              <div class="range-slider-wrap">
-                <input type="range" id="calc-distance" min="3" max="80" value="10" step="1">
-              </div>
-              <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #94A3B8; margin-top: 0.4rem;">
-                <span>3 km (Local)</span>
-                <span>40 km</span>
-                <span>80 km (Intercity)</span>
-              </div>
+              <label for="vehicle-model">Car Model & Type</label>
+              <input type="text" id="vehicle-model" class="form-input" placeholder="e.g. Honda Civic, Audi A6, Prado" required>
             </div>
+
+            <div class="form-group">
+              <label for="service-type-input">Service Required</label>
+              <select id="service-type-input" class="form-select">
+                <option value="Hydraulic Flatbed Towing">Hydraulic Flatbed Towing (Luxury/Sports)</option>
+                <option value="Standard Breakdown Towing">Standard Breakdown Towing</option>
+                <option value="Battery Jumpstart">Battery Jumpstart Assistance</option>
+                <option value="Fuel Delivery">Emergency Fuel Delivery</option>
+                <option value="Highway Recovery">Motorway / Highway Recovery</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem; padding: 0.9rem;">
+              🚀 Dispatch Tow Truck Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="services" class="section-padding" style="background: #090D16;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PREMIUM RECOVERY SERVICES</span>
+          <h2 class="section-title">Complete Towing & Roadside Assistance Solutions</h2>
+          <p class="section-desc">
+            Equipped with heavy-duty winches, modern hydraulic tilt flatbeds, and trained emergency technicians across Lahore.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div>
+              <div class="service-icon">🚚</div>
+              <h3>Hydraulic Flatbed Towing</h3>
+              <p>Designed for low-ground-clearance luxury cars, sports cars, EVs, and SUVs. Full zero-damage tilt bed loading.</p>
+              <ul class="service-features-list">
+                <li>Low-angle hydraulic tilt loading</li>
+                <li>Undercarriage protection</li>
+                <li>Ideal for Mercedes, BMW, Audi, Porsche</li>
+              </ul>
+            </div>
+            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Book Flatbed Tow</a>
           </div>
 
-          <div class="calc-result-panel">
-            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94A3B8;">Estimated Fare</span>
-            <div class="result-price" id="calc-price-output">PKR 4,000</div>
-            <div id="calc-time-output" style="color: #38BDF8; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;">~25 Mins Total ETA</div>
-            <a href="tel:+923075090646" class="btn-primary" style="width: 100%;">
-              📞 Confirm & Dispatch at This Fare
-            </a>
+          <div class="service-card">
+            <div>
+              <div class="service-icon">🚨</div>
+              <h3>24/7 Breakdown Recovery</h3>
+              <p>Immediate roadside tow for cars stranded due to mechanical breakdown, overheating, transmission failure, or engine stall.</p>
+              <ul class="service-features-list">
+                <li>24 Hours & Holidays availability</li>
+                <li>15-30 Minute rapid arrival guarantee</li>
+                <li>Towing to your preferred garage</li>
+              </ul>
+            </div>
+            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Call Emergency Recovery</a>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-icon">🛣️</div>
+              <h3>Motorway & Intercity Towing</h3>
+              <p>Long-distance vehicle transport between Lahore, Islamabad, Faisalabad, Multan, and Karachi via M2, M3, M11.</p>
+              <ul class="service-features-list">
+                <li>Intercity covered & open car carrier</li>
+                <li>Highway police compliant recovery</li>
+                <li>GPS tracking during transit</li>
+              </ul>
+            </div>
+            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Get Intercity Rate</a>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-icon">🔋</div>
+              <h3>Battery Jumpstart & On-Site Help</h3>
+              <p>Dead car battery? We provide instant heavy-duty booster jumpstarts and battery replacement on the spot in Lahore.</p>
+              <ul class="service-features-list">
+                <li>12V / 24V jumpstart boosters</li>
+                <li>Alternator diagnostic testing</li>
+                <li>Quick arrival to your doorstep</li>
+              </ul>
+            </div>
+            <button onclick="triggerWhatsAppDispatch('Battery Jumpstart')" class="btn-secondary" style="width: 100%;">Request Jumpstart</button>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-icon">⛽</div>
+              <h3>Fuel Delivery & Tire Change</h3>
+              <p>Ran out of petrol or got a flat tire on Ring Road or Canal Bank? Our mobile unit delivers fuel and changes spare tires.</p>
+              <ul class="service-features-list">
+                <li>Emergency petrol & diesel supply</li>
+                <li>Tire swap & puncture assistance</li>
+                <li>Safe highway protection setup</li>
+              </ul>
+            </div>
+            <button onclick="triggerWhatsAppDispatch('Fuel & Tire Assistance')" class="btn-secondary" style="width: 100%;">Request Fuel / Tire</button>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-icon">🏗️</div>
+              <h3>Accident Extraction & Winching</h3>
+              <p>Specialized heavy winching and ditch recovery for cars involved in collisions or stuck off-road.</p>
+              <ul class="service-features-list">
+                <li>Heavy-duty steel winch cables</li>
+                <li>Off-road ditch recovery</li>
+                <li>Insurance documentation assistance</li>
+              </ul>
+            </div>
+            <a href="tel:+923075090646" class="btn-secondary" style="width: 100%;">Emergency Winch Call</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Coverage Areas Grid -->
-  <section id="areas" class="section-padding" style="background: #090D16;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">24/7 LAHORE METRO COVERAGE</span>
-        <h2 class="section-title">Emergency Tow Trucks Stationed Near You</h2>
-        <p class="section-desc">We maintain active tow units parked at strategic hubs across Lahore for ultra-fast response.</p>
-      </div>
-
-      <div class="areas-grid">
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Gulberg I, II, III</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Main Boulevard & Liberty</div>
-          </div>
-          <span class="area-eta">15 Min ETA</span>
+    <!-- Interactive Fare Calculator Section -->
+    <section id="calculator" class="section-padding" style="background: #0F172A;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TRANSPARENT PRICING</span>
+          <h2 class="section-title">Instant Towing Rate Calculator</h2>
+          <p class="section-desc">Estimate your transparent towing fare before dispatching. No hidden charges!</p>
         </div>
 
-        <div class="area-chip">
-          <div>
-            <div class="area-name">DHA Lahore (Phases 1-9)</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Y-Block, Raya, Phase 6</div>
-          </div>
-          <span class="area-eta">15 Min ETA</span>
-        </div>
+        <div class="calculator-box">
+          <div class="calc-grid">
+            <div class="calc-inputs-col">
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="calc-vehicle">Select Vehicle Class</label>
+                <select id="calc-vehicle" class="form-select">
+                  <option value="sedan">Standard Sedan / Hatchback (Corolla, Civic, Swift)</option>
+                  <option value="suv">Compact SUV / Crossover (Sportage, Tucson, Vezel)</option>
+                  <option value="luxury">Luxury / Low Clearance (Mercedes, BMW, Porsche)</option>
+                  <option value="heavy">Heavy 4x4 / Large SUV (Prado, Land Cruiser, Fortuner)</option>
+                </select>
+              </div>
 
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Johar Town & Emporium</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Khayaban-e-Firdousi</div>
-          </div>
-          <span class="area-eta">20 Min ETA</span>
-        </div>
-
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Canal Road Corridor</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Mall Road to Thokar</div>
-          </div>
-          <span class="area-eta">15 Min ETA</span>
-        </div>
-
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Ring Road Lahore</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">All Interchanges & Tolls</div>
-          </div>
-          <span class="area-eta">15 Min ETA</span>
-        </div>
-
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Motorway M2 / M3 / M11</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Babu Sabu & Sialkot Toll</div>
-          </div>
-          <span class="area-eta">25 Min ETA</span>
-        </div>
-
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Model Town & Garden Town</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Link Road & Kalma Chowk</div>
-          </div>
-          <span class="area-eta">15 Min ETA</span>
-        </div>
-
-        <div class="area-chip">
-          <div>
-            <div class="area-name">Bahria Town & Lake City</div>
-            <div style="font-size: 0.75rem; color: #94A3B8;">Raiwind Road Sector</div>
-          </div>
-          <span class="area-eta">25 Min ETA</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- DYNAMIC BLOG SECTION --- -->
-  <section id="blog" class="section-padding" style="background: #0F172A;">
-    <div class="container">
-      <div class="blog-header-row">
-        <div>
-          <span class="section-tag">DRIVERS KNOWLEDGE BASE & GUIDES</span>
-          <h2 class="section-title" style="margin-bottom: 0.5rem;">Lahore Towing & Breakdown Blog</h2>
-          <p class="section-desc">Latest tips, emergency breakdown safety rules, and car maintenance guides.</p>
-        </div>
-
-        <button onclick="openAddBlogModal()" class="btn-primary">
-          ✍️ Write & Publish New Blog
-        </button>
-      </div>
-
-      <div class="blog-grid" id="blog-posts-container">
-        <!-- Blog Cards will render dynamically from JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Showcase Grid -->
-  <section id="fleet" class="section-padding" style="background: #090D16;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">STATE-OF-THE-ART FLEET</span>
-        <h2 class="section-title">Modern Tow Trucks & Equipment</h2>
-        <p class="section-desc">Built for luxury handling, safety, and rapid highway recovery.</p>
-      </div>
-
-      <div class="showcase-banner">
-        <div class="showcase-item">
-          <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
-          <div class="showcase-overlay">
-            <h4>Hydraulic Flatbed Carrier</h4>
-            <p style="font-size: 0.8rem; color: #94A3B8;">Zero ground clearance transport for sports cars & luxury SUVs in Lahore.</p>
-          </div>
-        </div>
-
-        <div class="showcase-item">
-          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80" alt="Roadside Emergency Assistance Lahore 24 Hours" loading="lazy">
-          <div class="showcase-overlay">
-            <h4>24/7 Roadside Rescue Unit</h4>
-            <p style="font-size: 0.8rem; color: #94A3B8;">Equipped for highway breakdown assistance, battery jumpstarts, and fueling.</p>
-          </div>
-        </div>
-
-        <div class="showcase-item">
-          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
-          <div class="showcase-overlay">
-            <h4>Commercial Towing Fleet</h4>
-            <p style="font-size: 0.8rem; color: #94A3B8;">Heavy winching, wheel-lift tow trucks, and intercity vehicle carriers.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQs Accordion Section -->
-  <section id="faq" class="section-padding" style="background: #0F172A;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
-        <h2 class="section-title">Got Questions? We Have Answers</h2>
-        <p class="section-desc">Everything you need to know about booking towing services in Lahore.</p>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item active">
-          <button class="faq-question">How fast can Fine Towing Service reach my location in Lahore?</button>
-          <div class="faq-answer">
-            <p>Our average arrival time is between 15 to 30 minutes across all main Lahore sectors, including Gulberg, DHA Phases 1-9, Johar Town, Model Town, Canal Bank Road, and Ring Road interchanges. We operate 24 hours a day, 365 days a year.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Is hydraulic flatbed towing safe for low luxury sports cars?</button>
-          <div class="faq-answer">
-            <p>Yes! We use specialized hydraulic tilt-bed tow trucks that lower completely flat onto the asphalt. This allows us to load low-ground-clearance vehicles like Audi, BMW, Porsche, Mercedes, and EV sedans without any bumper scrapes or undercarriage damage.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">How are towing fares calculated in Lahore?</button>
-          <div class="faq-answer">
-            <p>Towing fares depend on the vehicle class (Sedan, SUV, Luxury, or Heavy 4x4) and total distance to your destination garage or home. Local towing starts from PKR 2,500. You can use our online Rate Estimator tool above for transparent pricing.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Do you offer intercity towing from Lahore to Islamabad or Karachi?</button>
-          <div class="faq-answer">
-            <p>Yes, we provide intercity long-distance car transport via M2, M3, M11 motorways. We can safely tow or haul your vehicle from Lahore to Islamabad, Rawalpindi, Faisalabad, Multan, or Karachi.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">How do I request emergency breakdown recovery right now?</button>
-          <div class="faq-answer">
-            <p>You can instantly tap our hotline number +92 307 5090646 to speak directly with our 24/7 dispatcher, or tap the WhatsApp button to share your live GPS location for immediate dispatch.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Location Section -->
-  <section id="contact" class="section-padding" style="background: #090D16;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">DISPATCH HOTLINE</span>
-        <h2 class="section-title">Contact Fine Towing Service Lahore</h2>
-        <p class="section-desc">Our emergency dispatchers are online 24/7/365 to assist you.</p>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-        <div style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem;">
-          <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Dispatch Headquarters</h3>
-          
-          <div style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.05rem;">
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.4rem;">📍</span>
-              <div>
-                <strong>Address:</strong><br>
-                Main Gulberg III, Lahore, Punjab, Pakistan
+              <div class="form-group">
+                <label for="calc-distance">Estimated Distance (Kilometers): <span id="calc-distance-val" style="color: #F59E0B; font-weight: 800;">10 km</span></label>
+                <div class="range-slider-wrap">
+                  <input type="range" id="calc-distance" min="3" max="80" value="10" step="1">
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #94A3B8; margin-top: 0.4rem;">
+                  <span>3 km (Local)</span>
+                  <span>40 km</span>
+                  <span>80 km (Intercity)</span>
+                </div>
               </div>
             </div>
 
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.4rem;">📞</span>
-              <div>
-                <strong>24/7 Phone Hotline:</strong><br>
-                <a href="tel:+923075090646" style="color: #F59E0B; font-weight: 800;">+92 307 5090646</a> / <a href="tel:03075090646" style="color: #F59E0B; font-weight: 800;">0307 5090646</a>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.4rem;">💬</span>
-              <div>
-                <strong>WhatsApp Dispatch:</strong><br>
-                <button onclick="triggerWhatsAppDispatch('General Query')" style="background: none; border: none; color: #25D366; font-weight: 700; font-size: 1.05rem; cursor: pointer; text-decoration: underline; padding: 0;">
-                  Click here to chat on WhatsApp (+92 307 5090646)
-                </button>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.4rem;">⏰</span>
-              <div>
-                <strong>Operational Hours:</strong><br>
-                Open 24 Hours / 7 Days a Week (Including Public Holidays)
-              </div>
+            <div class="calc-result-panel">
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94A3B8;">Estimated Fare</span>
+              <div class="result-price" id="calc-price-output">PKR 4,000</div>
+              <div id="calc-time-output" style="color: #38BDF8; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;">~25 Mins Total ETA</div>
+              <a href="tel:+923075090646" class="btn-primary" style="width: 100%;">
+                📞 Confirm & Dispatch at This Fare
+              </a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
-          <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Stranded Right Now?</h3>
-          <p style="color: #94A3B8; margin-bottom: 1.5rem;">Don't wait on the roadside! Tap below to connect with the nearest tow driver instantly.</p>
-          <a href="tel:+923075090646" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem; margin-bottom: 1rem;">
-            📞 Call Hotline Now: 0307 5090646
-          </a>
-          <button onclick="triggerWhatsAppDispatch('Emergency Location Share')" class="btn-secondary btn-whatsapp" style="width: 100%; font-size: 1.1rem; padding: 1rem;">
-            💬 Send Live Location on WhatsApp
+    <!-- Coverage Areas Grid -->
+    <section id="areas" class="section-padding" style="background: #090D16;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">24/7 LAHORE METRO COVERAGE</span>
+          <h2 class="section-title">Emergency Tow Trucks Stationed Near You</h2>
+          <p class="section-desc">We maintain active tow units parked at strategic hubs across Lahore for ultra-fast response.</p>
+        </div>
+
+        <div class="areas-grid">
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Gulberg I, II, III</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Main Boulevard & Liberty</div>
+            </div>
+            <span class="area-eta">15 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">DHA Lahore (Phases 1-9)</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Y-Block, Raya, Phase 6</div>
+            </div>
+            <span class="area-eta">15 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Johar Town & Emporium</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Khayaban-e-Firdousi</div>
+            </div>
+            <span class="area-eta">20 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Canal Road Corridor</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Mall Road to Thokar</div>
+            </div>
+            <span class="area-eta">15 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Ring Road Lahore</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">All Interchanges & Tolls</div>
+            </div>
+            <span class="area-eta">15 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Motorway M2 / M3 / M11</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Babu Sabu & Sialkot Toll</div>
+            </div>
+            <span class="area-eta">25 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Model Town & Garden Town</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Link Road & Kalma Chowk</div>
+            </div>
+            <span class="area-eta">15 Min ETA</span>
+          </div>
+
+          <div class="area-chip">
+            <div>
+              <div class="area-name">Bahria Town & Lake City</div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">Raiwind Road Sector</div>
+            </div>
+            <span class="area-eta">25 Min ETA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DYNAMIC BLOG SECTION GRID (Pre-rendered for 100% Search Engine Indexing) -->
+    <section id="blog" class="section-padding" style="background: #0F172A;">
+      <div class="container">
+        <div class="blog-header-row">
+          <div>
+            <span class="section-tag">DRIVERS KNOWLEDGE BASE & GUIDES</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">Lahore Towing & Breakdown Blog</h2>
+            <p class="section-desc">Latest tips, emergency breakdown safety rules, and car maintenance guides.</p>
+          </div>
+
+          <button onclick="openAddBlogModal()" class="btn-primary">
+            ✍️ Write & Publish New Blog
           </button>
         </div>
+
+        <div class="blog-grid" id="blog-posts-container">
+          <!-- Pre-rendered Static HTML Blog Cards (Googlebot Reads 100% Content) -->
+          <article class="blog-card" onclick="openBlogFullPage('blog-1')">
+            <div class="blog-img-box">
+              <span class="blog-category-tag">Emergency Safety</span>
+              <img src="https://www.finetowingservice.com/assets/towing_fleet.jpg" alt="24/7 Car Breakdown Safety Guide Lahore Ring Road Motorway M2" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div>
+                <div class="blog-meta">
+                  <span>👤 Fine Towing Technical Team</span>
+                  <span>📅 Aug 12, 2026</span>
+                </div>
+                <h3 class="blog-title">24/7 Car Breakdown Safety Guide: What to Do on Lahore Ring Road & Motorway M2</h3>
+                <p class="blog-excerpt">Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck hotline +92 307 5090646.</p>
+              </div>
+              <div class="blog-card-actions" onclick="event.stopPropagation();">
+                <button onclick="openBlogFullPage('blog-1')" class="btn-secondary" style="flex:1;">📖 Read Full Article</button>
+                <button onclick="openEditBlogModal('blog-1')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">✏️ Edit</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="openBlogFullPage('blog-2')">
+            <div class="blog-img-box">
+              <span class="blog-category-tag">Luxury Towing</span>
+              <img src="https://www.finetowingservice.com/assets/flatbed_towing.jpg" alt="Why Luxury Vehicles Require Hydraulic Flatbed Towing in Lahore" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div>
+                <div class="blog-meta">
+                  <span>👤 Fine Towing Operations</span>
+                  <span>📅 Aug 11, 2026</span>
+                </div>
+                <h3 class="blog-title">Why Luxury Vehicles Require Hydraulic Flatbed Towing in Lahore (Zero-Scratch Guide)</h3>
+                <p class="blog-excerpt">Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized zero-degree tilt flatbed trailers to prevent bumper & undercarriage scrapes in Gulberg & DHA Lahore.</p>
+              </div>
+              <div class="blog-card-actions" onclick="event.stopPropagation();">
+                <button onclick="openBlogFullPage('blog-2')" class="btn-secondary" style="flex:1;">📖 Read Full Article</button>
+                <button onclick="openEditBlogModal('blog-2')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">✏️ Edit</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="openBlogFullPage('blog-3')">
+            <div class="blog-img-box">
+              <span class="blog-category-tag">Roadside Towing</span>
+              <img src="https://www.finetowingservice.com/assets/roadside_assistance.jpg" alt="24/7 Emergency Towing & Battery Jumpstart Solutions in Lahore" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div>
+                <div class="blog-meta">
+                  <span>👤 Fine Towing Rescue Team</span>
+                  <span>📅 Aug 10, 2026</span>
+                </div>
+                <h3 class="blog-title">Dead Battery vs Overheated Engine in Lahore Summer? Instant Emergency Solutions</h3>
+                <p class="blog-excerpt">Extreme summer heat in Lahore puts immense strain on car batteries and radiators. Learn how to diagnose radiator boil-over vs battery failure and call our mobile jumpstart tow team instantly.</p>
+              </div>
+              <div class="blog-card-actions" onclick="event.stopPropagation();">
+                <button onclick="openBlogFullPage('blog-3')" class="btn-secondary" style="flex:1;">📖 Read Full Article</button>
+                <button onclick="openEditBlogModal('blog-3')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">✏️ Edit</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Grid -->
+    <section id="fleet" class="section-padding" style="background: #090D16;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">STATE-OF-THE-ART FLEET</span>
+          <h2 class="section-title">Modern Tow Trucks & Equipment</h2>
+          <p class="section-desc">Built for luxury handling, safety, and rapid highway recovery.</p>
+        </div>
+
+        <div class="showcase-banner">
+          <div class="showcase-item">
+            <img src="https://www.finetowingservice.com/assets/flatbed_towing.jpg" alt="Hydraulic Flatbed Tow Truck Lahore Luxury Car Recovery" loading="lazy">
+            <div class="showcase-overlay">
+              <h4>Hydraulic Flatbed Carrier</h4>
+              <p style="font-size: 0.8rem; color: #94A3B8;">Zero ground clearance transport for sports cars & luxury SUVs in Lahore.</p>
+            </div>
+          </div>
+
+          <div class="showcase-item">
+            <img src="https://www.finetowingservice.com/assets/roadside_assistance.jpg" alt="Roadside Emergency Towing Assistance Lahore 24 Hours" loading="lazy">
+            <div class="showcase-overlay">
+              <h4>24/7 Roadside Rescue Unit</h4>
+              <p style="font-size: 0.8rem; color: #94A3B8;">Equipped for highway breakdown assistance, battery jumpstarts, and fueling.</p>
+            </div>
+          </div>
+
+          <div class="showcase-item">
+            <img src="https://www.finetowingservice.com/assets/towing_fleet.jpg" alt="Fine Towing Service Fleet Lahore Garage" loading="lazy">
+            <div class="showcase-overlay">
+              <h4>Commercial Towing Fleet</h4>
+              <p style="font-size: 0.8rem; color: #94A3B8;">Heavy winching, wheel-lift tow trucks, and intercity vehicle carriers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Accordion Section -->
+    <section id="faq" class="section-padding" style="background: #0F172A;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Got Questions? We Have Answers</h2>
+          <p class="section-desc">Everything you need to know about booking towing services in Lahore.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question">How fast can Fine Towing Service reach my location in Lahore?</button>
+            <div class="faq-answer">
+              <p>Our average arrival time is between 15 to 30 minutes across all main Lahore sectors, including Gulberg, DHA Phases 1-9, Johar Town, Model Town, Canal Bank Road, and Ring Road interchanges. We operate 24 hours a day, 365 days a year.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Is hydraulic flatbed towing safe for low luxury sports cars?</button>
+            <div class="faq-answer">
+              <p>Yes! We use specialized hydraulic tilt-bed tow trucks that lower completely flat onto the asphalt. This allows us to load low-ground-clearance vehicles like Audi, BMW, Porsche, Mercedes, and EV sedans without any bumper scrapes or undercarriage damage.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How are towing fares calculated in Lahore?</button>
+            <div class="faq-answer">
+              <p>Towing fares depend on the vehicle class (Sedan, SUV, Luxury, or Heavy 4x4) and total distance to your destination garage or home. Local towing starts from PKR 2,500. You can use our online Rate Estimator tool above for transparent pricing.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do you offer intercity towing from Lahore to Islamabad or Karachi?</button>
+            <div class="faq-answer">
+              <p>Yes, we provide intercity long-distance car transport via M2, M3, M11 motorways. We can safely tow or haul your vehicle from Lahore to Islamabad, Rawalpindi, Faisalabad, Multan, or Karachi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How do I request emergency breakdown recovery right now?</button>
+            <div class="faq-answer">
+              <p>You can instantly tap our hotline number +92 307 5090646 to speak directly with our 24/7 dispatcher, or tap the WhatsApp button to share your live GPS location for immediate dispatch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="section-padding" style="background: #090D16;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">DISPATCH HOTLINE</span>
+          <h2 class="section-title">Contact Fine Towing Service Lahore</h2>
+          <p class="section-desc">Our emergency dispatchers are online 24/7/365 to assist you.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+          <div style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem;">
+            <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Dispatch Headquarters</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.05rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.4rem;">📍</span>
+                <div>
+                  <strong>Address:</strong><br>
+                  Main Gulberg III, Lahore, Punjab, Pakistan
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.4rem;">📞</span>
+                <div>
+                  <strong>24/7 Phone Hotline:</strong><br>
+                  <a href="tel:+923075090646" style="color: #F59E0B; font-weight: 800;">+92 307 5090646</a> / <a href="tel:03075090646" style="color: #F59E0B; font-weight: 800;">0307 5090646</a>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.4rem;">💬</span>
+                <div>
+                  <strong>WhatsApp Dispatch:</strong><br>
+                  <button onclick="triggerWhatsAppDispatch('General Query')" style="background: none; border: none; color: #25D366; font-weight: 700; font-size: 1.05rem; cursor: pointer; text-decoration: underline; padding: 0;">
+                    Click here to chat on WhatsApp (+92 307 5090646)
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.4rem;">⏰</span>
+                <div>
+                  <strong>Operational Hours:</strong><br>
+                  Open 24 Hours / 7 Days a Week (Including Public Holidays)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Stranded Right Now?</h3>
+            <p style="color: #94A3B8; margin-bottom: 1.5rem;">Don't wait on the roadside! Tap below to connect with the nearest tow driver instantly.</p>
+            <a href="tel:+923075090646" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem; margin-bottom: 1rem;">
+              📞 Call Hotline Now: 0307 5090646
+            </a>
+            <button onclick="triggerWhatsAppDispatch('Emergency Location Share')" class="btn-secondary btn-whatsapp" style="width: 100%; font-size: 1.1rem; padding: 1rem;">
+              💬 Send Live Location on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- --- DEDICATED FULL-PAGE BLOG READER VIEW --- -->
+  <main id="full-blog-page-view">
+    <div class="container" style="max-width: 900px;">
+      <button onclick="showHomePage('blog')" class="btn-secondary" style="margin-bottom: 2rem;">
+        ← Back to All Blogs
+      </button>
+
+      <div id="full-blog-page-content" style="background: #1E293B; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem;">
+        <!-- Rendered Full Blog Article -->
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Sticky Mobile Action Bar -->
   <div class="mobile-fixed-bar">
@@ -1392,14 +1501,16 @@
     </div>
   </div>
 
-  <!-- --- MODAL 1: ADD / WRITE NEW BLOG --- -->
+  <!-- --- MODAL: WRITE / EDIT BLOG POST --- -->
   <div class="modal-overlay" id="add-blog-modal">
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeModal('add-blog-modal')">✕</button>
-      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">✍️ Write & Publish New Blog Post</h3>
-      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Publishing new blog articles boosts your Google SEO ranking!</p>
+      <h3 id="modal-form-heading" style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #F59E0B;">✍️ Write & Publish New Blog Post</h3>
+      <p style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.5rem;">Publishing & editing blog articles boosts your Google SEO ranking!</p>
 
       <form onsubmit="handleBlogSubmit(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <input type="hidden" id="blog-input-id" value="">
+
         <div class="form-group">
           <label for="blog-input-title">Blog Title</label>
           <input type="text" id="blog-input-title" class="form-input" placeholder="e.g. 5 Essential Emergency Towing Tips in DHA Lahore" required>
@@ -1424,7 +1535,7 @@
 
         <div class="form-group">
           <label for="blog-input-image">Cover Image URL (Optional)</label>
-          <input type="url" id="blog-input-image" class="form-input" placeholder="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d">
+          <input type="url" id="blog-input-image" class="form-input" placeholder="https://www.finetowingservice.com/assets/flatbed_towing.jpg">
         </div>
 
         <div class="form-group">
@@ -1432,18 +1543,8 @@
           <textarea id="blog-input-content" class="form-textarea" placeholder="Write full blog article advice here..." required></textarea>
         </div>
 
-        <button type="submit" class="btn-primary" style="padding: 1rem;">🚀 Publish Blog Article Now</button>
+        <button type="submit" class="btn-primary" id="modal-submit-btn" style="padding: 1rem;">🚀 Publish Blog Article Now</button>
       </form>
-    </div>
-  </div>
-
-  <!-- --- MODAL 2: FULL BLOG ARTICLE READER --- -->
-  <div class="modal-overlay" id="read-blog-modal">
-    <div class="modal-box" style="max-width: 850px;">
-      <button class="modal-close-btn" onclick="closeModal('read-blog-modal')">✕</button>
-      <div id="blog-reader-content">
-        <!-- Rendered Full Blog Article -->
-      </div>
     </div>
   </div>
 
@@ -1469,22 +1570,22 @@
         <div>
           <h4 class="footer-title">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#calculator">Rate Estimator</a></li>
-            <li><a href="#areas">Service Areas</a></li>
-            <li><a href="#blog">Blog & Guides</a></li>
-            <li><a href="#faq">FAQs</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('services')">Our Services</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('calculator')">Rate Estimator</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">Service Areas</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('blog')">Blog & Guides</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('faq')">FAQs</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-title">Top Locations</h4>
           <ul class="footer-links">
-            <li><a href="#areas">Gulberg Towing</a></li>
-            <li><a href="#areas">DHA Lahore Towing</a></li>
-            <li><a href="#areas">Johar Town Towing</a></li>
-            <li><a href="#areas">Ring Road Recovery</a></li>
-            <li><a href="#areas">Motorway M2 Help</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">Gulberg Towing</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">DHA Lahore Towing</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">Johar Town Towing</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">Ring Road Recovery</a></li>
+            <li><a href="javascript:void(0)" onclick="showHomePage('areas')">Motorway M2 Help</a></li>
           </ul>
         </div>
 
@@ -1509,52 +1610,74 @@
     </div>
   </footer>
 
-  <!-- Inline Dynamic JavaScript Engine with Blog System & LocalStorage -->
+  <!-- Inline Dynamic JavaScript Engine with High SEO Articles & Full Page Reader -->
   <script>
-    // Initial Pre-rendered High-Ranking SEO Blog Articles
+    // High-Ranking SEO Pre-rendered Blog Articles with Custom Assets
     const initialBlogPosts = [
       {
         id: 'blog-1',
         title: '24/7 Car Breakdown Safety Guide: What to Do on Lahore Ring Road & Motorway M2',
         category: 'Emergency Safety',
         author: 'Fine Towing Technical Team',
-        date: 'Aug 10, 2026',
-        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=80',
-        excerpt: 'Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck.',
+        date: 'Aug 12, 2026',
+        image: 'https://www.finetowingservice.com/assets/towing_fleet.jpg',
+        excerpt: 'Getting stranded on Lahore Ring Road or Babu Sabu Interchange can be dangerous. Learn the 5 emergency steps to stay safe before calling our 24/7 tow truck hotline +92 307 5090646.',
         content: `
-          <p>Experiencing a sudden engine breakdown or flat tire while driving on the high-speed Lahore Ring Road or Motorway M2 can be a nerve-wracking situation for any driver.</p>
-          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">1. Turn on Hazard Warning Signals Immediately</h4>
-          <p>The moment you notice loss of engine power or tire pressure, immediately switch on your hazard lights to warn oncoming traffic behind you.</p>
-          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">2. Pull Safely to the Emergency Shoulder</h4>
-          <p>Gently steer your vehicle to the extreme left emergency shoulder lane. If possible, avoid stopping on elevated flyovers or sharp curves.</p>
-          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">3. Call Fine Towing 24/7 Hotline (+92 307 5090646)</h4>
-          <p>Our emergency recovery trucks are stationed at Ring Road interchanges and Babu Sabu Toll Plaza for rapid 15 to 20 minute response.</p>
+          <p>Experiencing a sudden engine breakdown or tire blowout while driving on high-speed expressways like the Lahore Ring Road or Motorway M2 / M11 can be an extremely stressful situation for any vehicle owner.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Step 1: Switch on Hazard Lights Immediately</h4>
+          <p>The moment you sense engine power loss or abnormal steering vibration, turn on your hazard warning lights to signal oncoming fast-moving traffic.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Step 2: Pull Safely to the Extreme Left Emergency Shoulder</h4>
+          <p>Steer gradually toward the emergency shoulder lane. Never stop on active driving lanes, elevated overpasses, or sharp curve turns.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Step 3: Keep Passengers Behind Guardrails</h4>
+          <p>Exit the vehicle from the left passenger side and have all occupants stand safely behind the highway steel safety barriers while waiting for assistance.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Step 4: Contact Fine Towing Emergency Hotline (+92 307 5090646)</h4>
+          <p>Our emergency recovery trucks are stationed near major Lahore toll plazas (Babu Sabu, Thokar Niaz Baig, Kamahan Interchange, Airport Ring Road exit) for rapid 15-20 minute arrival.</p>
         `
       },
       {
         id: 'blog-2',
-        title: 'Why Luxury Vehicles Require Hydraulic Flatbed Towing (Zero-Scratch Guide)',
+        title: 'Why Luxury Vehicles Require Hydraulic Flatbed Towing in Lahore (Zero-Scratch Guide)',
         category: 'Luxury Towing',
         author: 'Fine Towing Operations',
-        date: 'Aug 05, 2026',
-        image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
-        excerpt: 'Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized tilt flatbed trailers to prevent bumper & undercarriage scrapes.',
+        date: 'Aug 11, 2026',
+        image: 'https://www.finetowingservice.com/assets/flatbed_towing.jpg',
+        excerpt: 'Low ground clearance sports cars like Mercedes, BMW, Audi, and Porsche need specialized zero-degree tilt flatbed trailers to prevent bumper & undercarriage scrapes in Gulberg & DHA Lahore.',
         content: `
-          <p>Transporting a high-end luxury vehicle requires specialized equipment. Standard wheel-lift tow trucks can damage low bumpers or strain automatic transmissions.</p>
-          <h4 style="color:#F59E0B; margin: 1rem 0 0.5rem 0;">Zero-Degree Ground Loading</h4>
-          <p>Hydraulic tilt flatbeds lower flat onto the road surface, allowing sports cars to roll onto the bed smoothly without undercarriage impact.</p>
+          <p>Luxury sports cars, electric vehicles (EVs), and premium SUVs require specialized flatbed recovery equipment to prevent expensive undercarriage damage.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Why Traditional Hook & Wheel-Lift Towing Damages Modern Vehicles</h4>
+          <p>Traditional tow trucks lift vehicles by two wheels, leaving the opposite axle rolling. On All-Wheel-Drive (AWD, 4MATIC, quattro, xDrive) vehicles, this can burn out differential gears and transmission clutches within miles.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">The Fine Towing Hydraulic Tilt-Bed Advantage</h4>
+          <p>Our flatbed tow trucks feature full hydraulic tilt beds that lower flat onto the asphalt at a low 5-degree loading angle. Your vehicle rolls onto the bed safely without scraping front splitters, oil pans, or side skirts.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Full Wheel Strap Securing</h4>
+          <p>Once loaded, soft nylon wheel lasso straps secure your car by its tires without touching aluminum rims or paintwork.</p>
         `
       },
       {
         id: 'blog-3',
         title: 'Dead Battery vs Overheated Engine in Lahore Summer? Instant Emergency Solutions',
-        category: 'Roadside Help',
+        category: 'Roadside Towing',
         author: 'Fine Towing Rescue Team',
-        date: 'Jul 28, 2026',
-        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80',
-        excerpt: 'Extreme summer temperatures in Lahore put immense strain on car batteries and radiators. Here is how to diagnose the issue quickly.',
+        date: 'Aug 10, 2026',
+        image: 'https://www.finetowingservice.com/assets/roadside_assistance.jpg',
+        excerpt: 'Extreme summer heat in Lahore puts immense strain on car batteries and radiators. Learn how to diagnose radiator boil-over vs battery failure and call our mobile jumpstart tow team instantly.',
         content: `
-          <p>Lahore summers often reach extreme temperatures, causing battery fluid evaporation and radiator coolant boiling. Our mobile units carry 12V/24V booster jumpstarts and coolant supplies across DHA, Gulberg, and Johar Town.</p>
+          <p>During peak summer months in Lahore when ambient temperatures exceed 42°C, vehicle roadside breakdowns spike significantly due to battery acid breakdown and cooling system pressure overload.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Diagnosing Engine Overheating</h4>
+          <p>If your temperature gauge spikes to H or steam rises from under the hood, pull over immediately and shut off the engine. Do NOT attempt to open the radiator pressure cap while hot!</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Diagnosing a Dead Battery</h4>
+          <p>If turning the key results in rapid clicking sounds, dim dashboard lights, or no starter crank, your battery has lost charge. High heat accelerates internal grid corrosion in 12V automotive batteries.</p>
+
+          <h4 style="color:#F59E0B; margin: 1.5rem 0 0.5rem 0; font-size:1.2rem;">Instant On-Site Assistance across Lahore</h4>
+          <p>Our 24/7 roadside units carry heavy-duty 12V & 24V jumpstart boosters, digital battery health testers, and emergency coolant to get you moving again quickly in DHA, Gulberg, Model Town, or Johar Town.</p>
         `
       }
     ];
@@ -1565,9 +1688,17 @@
       initMobileMenu();
       initLiveDispatchTimer();
       renderBlogs();
+      checkUrlHashRoute();
     });
 
-    // Blog Management & Rendering
+    function checkUrlHashRoute() {
+      const hash = window.location.hash;
+      if (hash.startsWith('#blog-view?id=')) {
+        const blogId = hash.split('?id=')[1];
+        if (blogId) openBlogFullPage(blogId);
+      }
+    }
+
     function getStoredBlogs() {
       const stored = localStorage.getItem('fine_towing_blogs');
       if (stored) {
@@ -1586,10 +1717,10 @@
 
       const blogs = getStoredBlogs();
       container.innerHTML = blogs.map(blog => `
-        <article class="blog-card">
+        <article class="blog-card" onclick="openBlogFullPage('${blog.id}')">
           <div class="blog-img-box">
             <span class="blog-category-tag">${escapeHtml(blog.category)}</span>
-            <img src="${blog.image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80'}" alt="${escapeHtml(blog.title)}" loading="lazy">
+            <img src="${blog.image || 'https://www.finetowingservice.com/assets/roadside_assistance.jpg'}" alt="${escapeHtml(blog.title)}" loading="lazy">
           </div>
           <div class="blog-body">
             <div>
@@ -1600,15 +1731,50 @@
               <h3 class="blog-title">${escapeHtml(blog.title)}</h3>
               <p class="blog-excerpt">${escapeHtml(blog.excerpt)}</p>
             </div>
-            <button onclick="openBlogReader('${blog.id}')" class="btn-secondary" style="width: 100%; margin-top: 1rem;">
-              📖 Read Full Guide
-            </button>
+            <div class="blog-card-actions" onclick="event.stopPropagation();">
+              <button onclick="openBlogFullPage('${blog.id}')" class="btn-secondary" style="flex:1;">
+                📖 Read Full Article
+              </button>
+              <button onclick="openEditBlogModal('${blog.id}')" class="btn-secondary" style="padding: 0.5rem 0.8rem;" title="Edit Post">
+                ✏️ Edit
+              </button>
+            </div>
           </div>
         </article>
       `).join('');
     }
 
     function openAddBlogModal() {
+      document.getElementById('blog-input-id').value = '';
+      document.getElementById('blog-input-title').value = '';
+      document.getElementById('blog-input-category').value = 'Emergency Safety';
+      document.getElementById('blog-input-author').value = 'Fine Towing Dispatch Team';
+      document.getElementById('blog-input-image').value = '';
+      document.getElementById('blog-input-content').value = '';
+
+      document.getElementById('modal-form-heading').textContent = '✍️ Write & Publish New Blog Post';
+      document.getElementById('modal-submit-btn').textContent = '🚀 Publish Blog Article Now';
+
+      document.getElementById('add-blog-modal').classList.add('active');
+    }
+
+    function openEditBlogModal(blogId) {
+      const blogs = getStoredBlogs();
+      const blog = blogs.find(b => b.id === blogId);
+      if (!blog) return;
+
+      document.getElementById('blog-input-id').value = blog.id;
+      document.getElementById('blog-input-title').value = blog.title;
+      document.getElementById('blog-input-category').value = blog.category || 'Emergency Safety';
+      document.getElementById('blog-input-author').value = blog.author || 'Fine Towing Dispatch Team';
+      document.getElementById('blog-input-image').value = blog.image || '';
+      
+      const cleanContent = blog.content.replace(/<\/p><p>/g, '\n\n').replace(/<[^>]*>/g, '');
+      document.getElementById('blog-input-content').value = cleanContent;
+
+      document.getElementById('modal-form-heading').textContent = '✏️ Edit Blog Article';
+      document.getElementById('modal-submit-btn').textContent = '💾 Save & Update Blog Post';
+
       document.getElementById('add-blog-modal').classList.add('active');
     }
 
@@ -1618,6 +1784,7 @@
 
     function handleBlogSubmit(e) {
       e.preventDefault();
+      const editId = document.getElementById('blog-input-id').value;
       const title = document.getElementById('blog-input-title').value.trim();
       const category = document.getElementById('blog-input-category').value;
       const author = document.getElementById('blog-input-author').value.trim() || 'Fine Towing Team';
@@ -1626,51 +1793,107 @@
 
       if (!title || !content) return;
 
-      const newBlog = {
-        id: 'blog-' + Date.now(),
-        title,
-        category,
-        author,
-        date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-        image: image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
-        excerpt: content.substring(0, 140) + '...',
-        content: `<p>${content.replace(/\n/g, '</p><p>')}</p>`
-      };
-
       const currentBlogs = getStoredBlogs();
-      currentBlogs.unshift(newBlog);
-      localStorage.setItem('fine_towing_blogs', JSON.stringify(currentBlogs));
+      const formattedContent = `<p>${content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>')}</p>`;
 
+      if (editId) {
+        const index = currentBlogs.findIndex(b => b.id === editId);
+        if (index !== -1) {
+          currentBlogs[index].title = title;
+          currentBlogs[index].category = category;
+          currentBlogs[index].author = author;
+          if (image) currentBlogs[index].image = image;
+          currentBlogs[index].excerpt = content.substring(0, 140) + '...';
+          currentBlogs[index].content = formattedContent;
+        }
+      } else {
+        const newBlog = {
+          id: 'blog-' + Date.now(),
+          title,
+          category,
+          author,
+          date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+          image: image || 'https://www.finetowingservice.com/assets/roadside_assistance.jpg',
+          excerpt: content.substring(0, 140) + '...',
+          content: formattedContent
+        };
+        currentBlogs.unshift(newBlog);
+      }
+
+      localStorage.setItem('fine_towing_blogs', JSON.stringify(currentBlogs));
       renderBlogs();
       closeModal('add-blog-modal');
-      e.target.reset();
+      
+      if (editId && document.getElementById('full-blog-page-view').classList.contains('active')) {
+        openBlogFullPage(editId);
+      }
 
-      alert('🎉 Blog Article Published Successfully! Your new blog is live on the site.');
+      alert(editId ? '✅ Blog Article Updated Successfully!' : '🎉 New Blog Article Published Successfully!');
     }
 
-    function openBlogReader(blogId) {
+    function openBlogFullPage(blogId) {
       const blogs = getStoredBlogs();
       const blog = blogs.find(b => b.id === blogId);
       if (!blog) return;
 
-      const readerBox = document.getElementById('blog-reader-content');
-      readerBox.innerHTML = `
-        <span class="blog-category-tag" style="position:static; display:inline-block; margin-bottom: 1rem;">${escapeHtml(blog.category)}</span>
-        <h2 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 0.75rem; color:#FFFFFF;">${escapeHtml(blog.title)}</h2>
-        <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.5rem;">
-          By <strong style="color:#F59E0B;">${escapeHtml(blog.author)}</strong> • Published on ${escapeHtml(blog.date)}
+      window.location.hash = `#blog-view?id=${blog.id}`;
+
+      document.getElementById('main-homepage-content').classList.add('hidden');
+      const pageView = document.getElementById('full-blog-page-view');
+      pageView.classList.add('active');
+
+      const pageContent = document.getElementById('full-blog-page-content');
+      pageContent.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom: 1.5rem;">
+          <span class="blog-category-tag" style="position:static; display:inline-block;">${escapeHtml(blog.category)}</span>
+          <button onclick="openEditBlogModal('${blog.id}')" class="btn-secondary" style="font-size:0.85rem; padding:0.4rem 0.9rem;">
+            ✏️ Edit This Article
+          </button>
         </div>
-        <img src="${blog.image || 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80'}" style="width:100%; max-height:350px; object-fit:cover; border-radius:12px; margin-bottom:1.5rem;" alt="${escapeHtml(blog.title)}">
-        <div style="font-size: 1.05rem; line-height: 1.7; color: #E2E8F0;">
+
+        <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; color:#FFFFFF; line-height:1.25;">
+          ${escapeHtml(blog.title)}
+        </h1>
+
+        <div style="display:flex; align-items:center; gap:1.5rem; font-size: 0.9rem; color: #94A3B8; margin-bottom: 2rem; padding-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1);">
+          <span>👤 Author: <strong style="color:#F59E0B;">${escapeHtml(blog.author)}</strong></span>
+          <span>📅 Date: ${escapeHtml(blog.date)}</span>
+          <span>📍 Location: Lahore, Pakistan</span>
+        </div>
+
+        <div style="border-radius:16px; overflow:hidden; margin-bottom:2rem; border:1px solid rgba(255,255,255,0.1);">
+          <img src="${blog.image || 'https://www.finetowingservice.com/assets/roadside_assistance.jpg'}" style="width:100%; max-height:450px; object-fit:cover; display:block;" alt="${escapeHtml(blog.title)}">
+        </div>
+
+        <div style="font-size: 1.1rem; line-height: 1.8; color: #E2E8F0; margin-bottom: 2.5rem;">
           ${blog.content}
         </div>
-        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); display:flex; gap:1rem;">
-          <a href="tel:+923075090646" class="btn-primary" style="flex:1;">📞 Call Dispatch (+92 307 5090646)</a>
-          <button onclick="triggerWhatsAppDispatch('Blog Emergency Dispatch')" class="btn-secondary btn-whatsapp" style="flex:1;">💬 WhatsApp GPS Location</button>
+
+        <!-- Emergency Towing Dispatch Call Box -->
+        <div style="background:#0F172A; border:1px solid rgba(245, 158, 11, 0.4); border-radius:16px; padding:2rem; text-align:center;">
+          <h3 style="color:#FFFFFF; font-size:1.4rem; margin-bottom:0.5rem;">🚨 Stranded in Lahore? Call Fine Towing 24/7</h3>
+          <p style="color:#94A3B8; margin-bottom:1.25rem;">Our emergency drivers arrive in 15 to 30 minutes anywhere in Lahore.</p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <a href="tel:+923075090646" class="btn-primary" style="font-size:1.05rem; padding:0.9rem 1.8rem;">📞 Call Hotline: 0307 5090646</a>
+            <button onclick="triggerWhatsAppDispatch('Blog Reader Emergency')" class="btn-secondary btn-whatsapp" style="font-size:1.05rem; padding:0.9rem 1.8rem;">💬 WhatsApp GPS Location</button>
+          </div>
         </div>
       `;
 
-      document.getElementById('read-blog-modal').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showHomePage(targetSectionId) {
+      document.getElementById('full-blog-page-view').classList.remove('active');
+      document.getElementById('main-homepage-content').classList.remove('hidden');
+      window.location.hash = '';
+
+      if (targetSectionId) {
+        setTimeout(() => {
+          const el = document.getElementById(targetSectionId);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+      }
     }
 
     function escapeHtml(str) {
@@ -1772,9 +1995,11 @@
     }
     window.triggerWhatsAppDispatch = triggerWhatsAppDispatch;
     window.openAddBlogModal = openAddBlogModal;
+    window.openEditBlogModal = openEditBlogModal;
     window.closeModal = closeModal;
     window.handleBlogSubmit = handleBlogSubmit;
-    window.openBlogReader = openBlogReader;
+    window.openBlogFullPage = openBlogFullPage;
+    window.showHomePage = showHomePage;
   </script>
 </body>
 </html>
