@@ -13,10 +13,11 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://www.finetowingservice.com/">
 
-  <!-- Official Fast Loading Favicon & Logo Tags -->
-  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
-  <link rel="shortcut icon" href="./favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png">
+  <!-- Official High-Resolution Favicon & Logo Tags (Version Busted) -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png?v=2">
+  <link rel="shortcut icon" href="./favicon.ico?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png?v=2">
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
@@ -795,7 +796,7 @@
     }
   </style>
 
-  <!-- JSON-LD 1: Organization & Ultra-Fast Vercel Edge Favicon Logo -->
+  <!-- JSON-LD 1: Organization & Official Logo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -867,7 +868,7 @@
     <div class="container header-inner">
       <a href="javascript:void(0)" onclick="showHomePage()" class="logo-brand">
         <div class="logo-img-box">
-          <img src="./favicon.png" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';" alt="Fine Towing Service Logo" width="48" height="48">
+          <img src="./favicon.png?v=2" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';" alt="Fine Towing Service Logo" width="48" height="48">
         </div>
         <div>
           <div class="logo-text-title">FINE <span>TOWING</span></div>
@@ -1471,7 +1472,7 @@
         <div class="footer-brand">
           <div class="logo-brand">
             <div class="logo-img-box">
-              <img src="./favicon.png" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';" alt="Fine Towing Service Logo" width="48" height="48">
+              <img src="./favicon.png?v=2" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6';" alt="Fine Towing Service Logo" width="48" height="48">
             </div>
             <div>
               <div class="logo-text-title">FINE <span>TOWING</span></div>
@@ -1609,8 +1610,8 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Force reset local storage cache for lightning speed
-      const cacheVersion = 'v18_ultra_fast_vercel_cdn';
+      // Force reset local storage cache with version 19
+      const cacheVersion = 'v19_crisp_favicon_ico_png';
       if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
         localStorage.removeItem('fine_towing_blogs');
         localStorage.setItem('fine_towing_cache_v', cacheVersion);
@@ -1787,7 +1788,7 @@
       if (!title || !content) return;
 
       const currentBlogs = getStoredBlogs();
-      const formattedContent = `<p>${content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>')}</p>`;
+      const formattedContent = `<p>${content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>').replace(/<\/p><p>/g, '</p><p>')}</p>`;
 
       if (editId) {
         const index = currentBlogs.findIndex(b => b.id === editId);
