@@ -13,10 +13,10 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://www.finetowingservice.com/">
 
-  <!-- Google Search Official Favicon & Logo Tags (Direct Google Drive Raw Logo Stream) -->
-  <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6">
-  <link rel="icon" type="image/png" sizes="192x192" href="https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6">
+  <!-- Official Google Search Result Favicon & Logo Tags -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
+  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png">
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
@@ -795,14 +795,14 @@
     }
   </style>
 
-  <!-- JSON-LD 1: Organization & Logo (Google Search Rich Logo) -->
+  <!-- JSON-LD 1: Organization & Official Google Search Favicon Logo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Fine Towing Service Lahore",
     "url": "https://www.finetowingservice.com/",
-    "logo": "https://lh3.googleusercontent.com/d/1J2QhBv2dZtzkXMYduAnzp0exWDAsgHp6",
+    "logo": "https://www.finetowingservice.com/favicon.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+923075090646",
@@ -1610,7 +1610,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       // Force reset local storage cache to display user's 3 Google Drive photos + logo
-      const cacheVersion = 'v15_user_all_gdrive_photos_and_logo';
+      const cacheVersion = 'v16_user_google_search_favicon_and_logo';
       if (localStorage.getItem('fine_towing_cache_v') !== cacheVersion) {
         localStorage.removeItem('fine_towing_blogs');
         localStorage.setItem('fine_towing_cache_v', cacheVersion);
